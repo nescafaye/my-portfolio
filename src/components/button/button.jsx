@@ -12,7 +12,7 @@ const Button = ({children}) => {
     
       <button
         type="button" 
-        className="px-7 py-2 rounded-full border-[1px] border-black bg-slate-300">
+        className="font-urban font-medium px-7 py-2 rounded-full border-[1px] border-black bg-slate-300">
             {children}
       </button>
     
