@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../components/button/button";
+import { Icon } from "@iconify/react";
 
 const About = () => {
   return (
@@ -13,8 +14,8 @@ const About = () => {
             Photo here
         </div>
         <div className="space-x-4">
-            <Button>Contact Me</Button>
-            <Button>Contact Me</Button>
+            <Button type="text" style="filloutlined" shape="rounded">Contact Me</Button>
+            <Button type="text" style="filloutlined" shape="rounded">Contact Me</Button>
         </div>
       </div>
 
@@ -31,8 +32,16 @@ const About = () => {
             sapien Pellentesque habitant. Lorem ipsum dolor sit amet, consectetur
             adipiscing elit. Ut et euismod sapien Pellentesque habitant.
         </div>
-        <div>
-            Icons here
+        <div className="space-x-4">
+            <Button type="icon" style="filloutlined" shape="rounded">
+              <Icon icon="iconamoon:mode-dark-light" width="18" className="mx-auto" />
+            </Button>
+            <Button type="icon" style="filloutlined" shape="rounded">
+              <Icon icon="iconamoon:mode-dark-light" width="18" className="mx-auto" />
+            </Button>
+            <Button type="icon" style="filloutlined" shape="rounded">
+              <Icon icon="iconamoon:mode-dark-light" width="18" className="mx-auto" />
+            </Button>
         </div>
       </div>
 
