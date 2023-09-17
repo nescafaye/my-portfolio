@@ -11,7 +11,7 @@ const Works = () => {
 
         <div className="w-5/6 mx-auto space-y-4 border-2">
 
-          <div className="font-mono text-5xl md:text-6xl lg:text-7xl font-bold text-transparent text-stroke">
+          <div className="font-primary text-5xl md:text-6xl lg:text-7xl font-bold text-transparent dark-stroke">
             Digital Portfolio
           </div>
           
@@ -22,7 +22,7 @@ const Works = () => {
 
         </div>
 
-        <div className="w-5/6 mx-auto font-urban text-base lg:text-lg">
+        <div className="w-5/6 mx-auto font-secondary text-base lg:text-lg">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi
           nemo tenetur mollitia, voluptates dolore soluta esse alias
           perspiciatis totam incidunt optio ipsum, at quis voluptas fuga minima
