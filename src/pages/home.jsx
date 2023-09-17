@@ -7,19 +7,39 @@ import Skills from '../sections/skills'
 import Experience from '../sections/experience'
 import Works from '../sections/works'
 
-const Home = () => {
-  return (
-    <div className=''>
-        <Navbar/>
-        <Menu/>
+import useDarkMode from '../theme';
 
+const Home = () => {
+
+  const { isDarkMode } = useDarkMode();
+
+  return (
+    <div className={`${isDarkMode ? 'dark:bg-black dark:text-white' : 'bg-white text-black'}`}>
+        <Navbar />
+        <Menu/>
         <Hero/>
         <About/>
         <Experience/>
         {/* <Skills/> */}
         <Works/>
+
+        
     </div>
   )
 }
 
 export default Home
+
+// add icons x
+// hide nav on scroll -
+// component styles x
+// dark mode -
+// neon styles
+// responsive mobile design x
+// scroll animations
+// custom scroll track x
+// cursor design -
+// prompt animation -
+// json data x - 
+// wrap reverse works -
+// images (database? aws) -

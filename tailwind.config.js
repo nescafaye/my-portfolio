@@ -4,11 +4,13 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
+  lightMode: 'class',
   theme: {
     extend: { 
       fontFamily: {
-        mono: ['Space Mono', 'monospace'],
-        urban: ['Urbanist', 'sans-serif']
+        primary: ['Georgia', 'Times New Roman', 'Times', 'serif'],
+        secondary: ['Urbanist', 'sans-serif']
       }
     },
   },

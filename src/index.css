@@ -8,8 +8,12 @@
 
 } */
 
-.text-stroke {
+.dark-stroke {
   -webkit-text-stroke: 1px black;
+}
+
+.light-stroke {
+  -webkit-text-stroke: 1px white;
 }
 
 /* .text-glow {

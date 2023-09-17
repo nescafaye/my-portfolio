@@ -1,6 +1,6 @@
 import React from "react";
 
-const Button = ({ style, shape, variant, type, children }) => {
+const Button = ({ style, shape, variant, type, toggle, children }) => {
   
   const ButtonStyle = {
     filled: "bg-slate-300",
@@ -19,14 +19,14 @@ const Button = ({ style, shape, variant, type, children }) => {
   };
 
   const ButtonType = {
-    text: "font-urban text-sm md:text-base px-6 py-2",
+    text: "font-secondary text-sm md:text-base px-6 py-2",
     icon: "w-[38px] h-[38px] md:w-[42px] md:h-[42px]"
   }
 
   const classNames = ButtonStyle[style] + " " + ButtonShape[shape] + " " + ButtonVariant[variant] + " " + ButtonType[type];
 
   return (
-    <button type="button" className={classNames}>
+    <button type="button" onClick={toggle} className={classNames}>
       {children}
     </button>
   );
