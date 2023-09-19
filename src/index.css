@@ -2,14 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
-  background-color: #01001B;
-  color: white;
+body {
+  cursor: none;
 
-} */
+}
 
 .dark-stroke {
-  -webkit-text-stroke: 0.6px white !important;
+  -webkit-text-stroke: 0.7px white !important;
   mix-blend-mode: difference;
 }
 
@@ -19,34 +18,38 @@
 
 /* .text-glow {
   animation: flicker 0.5s infinite alternate;
-  color: #fff;
   text-shadow:
       0 0 7px #fff,
       0 0 10px #fff,
       0 0 21px #fff,
-      0 0 42px #0fa,
-      0 0 82px #0fa,
-      0 0 92px #0fa,
-      0 0 102px #0fa,
-      0 0 151px #0fa;
+      0 0 42px #FF00C7,
+      0 0 82px #FF00C7,
+      0 0 92px #FF00C7,
+      0 0 102px #FF00C7,
+      0 0 151px #FF00C7;
 } */
 
-/* @keyframes flicker {
-  0%, 18%, 22%, 25%, 53%, 57%, 100% {
-    text-shadow:
-      0 0 4px #fff,
-      0 0 11px #fff,
-      0 0 19px #fff,
-      0 0 40px #0fa,
-      0 0 80px #0fa,
-      0 0 90px #0fa,
-      0 0 100px #0fa,
-      0 0 150px #0fa;
+.cursor {
+  width: 16px;
+  height: 16px;
+  background-color: #fff; /* Background color of the cursor */
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference; /* Optional blend mode for the glowing effect */
+  animation: glow 1s ease infinite alternate; /* Add a glowing animation */
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
   }
-  20%, 24%, 55% {       
-    text-shadow: none;
+  100% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
   }
-} */
+}
+
 
 /*========== Scrollbar ==========*/
 

@@ -5,7 +5,7 @@ const Button = ({ style, shape, variant, type, toggle, children }) => {
   const ButtonStyle = {
     filled: "bg-slate-300 dark:bg-transparent",
     outlined: "border-[1px] border-black dark:border-white",
-    filloutlined: "bg-slate-300 dark:bg-transparent border-[1px] border-black dark:border-white",
+    filloutlined: "bg-slate-300 dark:bg-dark-60 border-[1px] border-black dark:border-white",
   };
 
   const ButtonShape = {

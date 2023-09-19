@@ -11,8 +11,12 @@ export default {
         primary: ['Georgia', 'Times New Roman', 'Times', 'serif'],
         secondary: ['Urbanist', 'sans-serif']
       },
-      textColor: {
-        white: "#fff"
+      colors: {
+        "dark-60": "#020211",
+        "dark-30": "#FF00C7",
+        "dark-10": "#D9D9D9",
+        "accent-color-1": "#00FF19",
+        "accent-color-2": "#00D1FF"
       }
     },
   },
