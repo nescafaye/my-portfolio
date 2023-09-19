@@ -1,15 +1,16 @@
 import React from 'react'
 import Button from '../button/button'
 import { Icon } from "@iconify/react";
-import useDarkMode from '../../theme';
+// import useDarkMode from '../../theme';
 
-const Navbar = () => {
+const Navbar = ({ isDarkMode, toggleDarkMode }) => {
 
-  const { isDarkMode, toggleDarkMode } = useDarkMode();
 
   return (
     // <div className='h-screen'>
-        <div className='flex w-full justify-between items-center px-6 py-4 md:px-8 md:py-6 sticky top-0 z-50 bg-white backdrop-blur-lg bg-opacity-40 shadow'>
+        <div className='flex w-full justify-between items-center px-6 py-4 md:px-8 md:py-6 sticky top-0 z-50 
+            bg-white backdrop-blur-lg bg-opacity-40
+            dark:bg-black dark:backdrop-blur-lg dark:bg-opacity-40 shadow'>
             
             <div>Logo here</div>
 
@@ -18,11 +19,7 @@ const Navbar = () => {
                 <Button type="text" style="filloutlined" shape="rounded">Download Resume</Button>
 
                 <Button toggle={toggleDarkMode} type="icon" style="filloutlined" shape="rounded">
-                  {isDarkMode ? (
-                    <Icon icon="iconamoon:mode-light" width="18" className="mx-auto" /> 
-                  ) : ( 
-                    <Icon icon="iconamoon:mode-dark" width="18" className="mx-auto" />
-                  )}
+                  <Icon icon={isDarkMode ? "iconamoon:mode-light" : "iconamoon:mode-dark"} width="18" className="mx-auto" />
                 </Button>
 
             </div>

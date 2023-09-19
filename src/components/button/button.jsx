@@ -3,9 +3,9 @@ import React from "react";
 const Button = ({ style, shape, variant, type, toggle, children }) => {
   
   const ButtonStyle = {
-    filled: "bg-slate-300",
-    outlined: "border-[1px] border-black",
-    filloutlined: "bg-slate-300 border-[1px] border-black",
+    filled: "bg-slate-300 dark:bg-transparent",
+    outlined: "border-[1px] border-black dark:border-white",
+    filloutlined: "bg-slate-300 dark:bg-transparent border-[1px] border-black dark:border-white",
   };
 
   const ButtonShape = {

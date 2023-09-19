@@ -1,9 +1,6 @@
 import React from "react";
-import useDarkMode from '../theme';
 
 const Hero = () => {
-
-  const { isDarkMode } = useDarkMode();
 
   return (
     <div className="h-full flex flex-col justify-start items-center px-8 md:px-28 lg:px-44 py-12 md:pb-20 gap-y-12">

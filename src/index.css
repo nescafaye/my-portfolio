@@ -9,12 +9,13 @@
 } */
 
 .dark-stroke {
-  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: 0.6px white !important;
+  mix-blend-mode: difference;
 }
 
-.light-stroke {
-  -webkit-text-stroke: 1px white;
-}
+/* .light-stroke {
+  -webkit-text-stroke: 1px white !important;
+} */
 
 /* .text-glow {
   animation: flicker 0.5s infinite alternate;

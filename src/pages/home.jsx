@@ -1,4 +1,6 @@
 import React from 'react'
+import { useState, useEffect } from 'react'
+
 import Menu from '../components/navigation/menu'
 import Navbar from '../components/navigation/navbar'
 import Hero from '../sections/hero'
@@ -6,16 +8,15 @@ import About from '../sections/about'
 import Skills from '../sections/skills'
 import Experience from '../sections/experience'
 import Works from '../sections/works'
-
 import useDarkMode from '../theme';
 
 const Home = () => {
 
-  const { isDarkMode } = useDarkMode();
+  const { isDarkMode, toggleDarkMode } = useDarkMode();
 
   return (
-    <div className={`${isDarkMode ? 'dark:bg-black dark:text-white' : 'bg-white text-black'}`}>
-        <Navbar />
+    <div className="dark:bg-black dark:text-white bg-white text-black">
+        <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode}/>
         <Menu/>
         <Hero/>
         <About/>
