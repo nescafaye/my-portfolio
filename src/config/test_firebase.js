@@ -5,7 +5,7 @@ const handleSubmit = (testdata) => {
     const ref = collection(firestore, "test_data") // Firebase creates this automatically
  
     let data = {
-        testData: testdata
+        name: testdata
     }
     
     try {

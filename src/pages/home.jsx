@@ -15,12 +15,14 @@ import handleSubmit from "../config/test_firebase";
 import { useRef } from "react";
 
 const Home = () => {
+
   const dataRef = useRef();
 
   const submithandler = (e) => {
     e.preventDefault();
     handleSubmit(dataRef.current.value);
     dataRef.current.value = "";
+    console.log(dataRef.current.value)
   };
 
   const { isDarkMode, toggleDarkMode } = useDarkMode();
@@ -32,7 +34,7 @@ const Home = () => {
         <input type="text" ref={dataRef} />
         <button type="submit">Save</button>
       </form>
-      
+
       <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
       <Menu />
       <Hero />
