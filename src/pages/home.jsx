@@ -12,22 +12,9 @@ import Cursor from "../components/cursor/cursor";
 import useDarkMode from "../theme";
 
 import data from "../data"
-import { addDoc, collection } from "@firebase/firestore"
-import { firestore } from "../config/firebase"
 
 const Home = () => {
 
-  const handleSubmit = () => {
-    const ref = collection(firestore, "user"); // Firebase creates this automatically
-
-    try {
-      addDoc(ref, data).then(() => {
-        console.log("Data submitted successfully!");
-      });
-    } catch (err) {
-      console.log(err);
-    }
-  };
 
   const { isDarkMode, toggleDarkMode } = useDarkMode();
 
