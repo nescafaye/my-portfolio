@@ -139,7 +139,7 @@ export const data = {
             projectTags: [
                 "Laravel", "Javascript", "HTML", "SASS", "Livewire"
             ],
-            projectImage: "#",
+            projectImage: "https://storage.googleapis.com/portfolio_photos/VanGo.png",
             projectLink: "#"
         },
         {

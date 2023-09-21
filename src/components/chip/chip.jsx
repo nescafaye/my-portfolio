@@ -8,13 +8,13 @@ const Chip = ({shape, variant,children}) => {
   };
   
   const ChipVariant = {
-    regular: "bg-slate-200 text-gray-500",
+    regular: "dark:bg-[#232324] dark:text-[#72727B] border-none",
     beginner: "border-cyan-400",
     intermediate: "border-yellow-300",
     advanced: "border-lime-400"
   }
 
-  const classNames = "font-small font-medium text-sm w-fit px-6 py-1 border-[1px]" + " " + ChipShape[shape] + " " + ChipVariant[variant];
+  const classNames = "font-secondary font-medium text-xs lg:text-sm w-fit px-6 py-1 border-[1px]" + " " + ChipShape[shape] + " " + ChipVariant[variant];
 
   return (
     <div className={classNames}>

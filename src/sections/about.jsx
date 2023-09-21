@@ -3,8 +3,9 @@ import Button from "../components/button/button";
 import Icon from "../components/icon/icon";
 
 const About = ({ summary, desc, socials }) => {
+  
   return (
-    <div className="h-full flex flex-col xl:flex-row justify-center items-stretch  gap-8 xl:gap-4 px-8 md:px-28 lg:px-44 py-16 lg:py-32 border-2 border-black">
+    <div className="h-full flex flex-col xl:flex-row justify-center items-stretch gap-8 xl:gap-4 px-8 md:px-28 lg:px-44 py-16 lg:py-32">
 
       <div className="flex-1 space-y-10 border-2">
         <div className="font-primary text-6xl lg:text-7xl font-bold text-transparent dark-stroke">
@@ -36,9 +37,9 @@ const About = ({ summary, desc, socials }) => {
 
         <div className="flex gap-x-4">
           {
-            socials.map((social)=> {
+            socials.map((social, index)=> {
               return (
-                <Button type="icon" style="filloutlined" shape="rounded" link={social.socialUrl} key={social.socialName}>
+                <Button type="icon" style="filloutlined" shape="rounded" link={social.socialUrl} key={index}>
                   <Icon name={social.socialName}/>
                 </Button>
               )
