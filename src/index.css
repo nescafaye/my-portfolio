@@ -72,3 +72,8 @@ body {
   background: #888892; 
 }
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+

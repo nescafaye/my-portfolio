@@ -1,11 +1,14 @@
-const data = {
+export const data = {
     name: "Faye Talay",
-    intro: "I'm into Web, UI, and Design.",
-    desc: "An aspiring developer and designer based at Cagayan Valley, Philippines.",
-    link: "drive.pdf",
+    intro: "Hi! I'm Faye. I'm into the art of Web Development, UI/UX, and Graphic Design. Exploring the world of digital design with a growing passion for blending aesthetics and functionality.",
+    quote: "Design transforms imagination into visual poetry, making the digital world a beautiful canvas.",
+    summary: "An aspiring developer and designer based at Cagayan Valley, Philippines.",
+    desc: "My style is your style",
+    photo: "#",
+    link: "#",
     socials: [
         {
-            socialName: "LinkedIn",
+            socialName: "Linkedin",
             socialUrl: "https://linkedin.com/in/faye-talay"
         },
         {
@@ -17,13 +20,13 @@ const data = {
             socialUrl: "https://behance.com/nescafaye"
         },
         {
-            socialName: "Dribble",
+            socialName: "Dribbble",
             socialUrl: "https://dribbble.com/nescafaye"
         }   
     ],
-    field: [
+    skills: [
         {
-            fieldName: "Web Development",
+            skillName: "Web Development",
             stack: [
                 {
                     stackName: "HTML",
@@ -64,7 +67,7 @@ const data = {
             ]
         },
         {
-            fieldName: "UI/UX Design",
+            skillName: "UI/UX Design",
             stack: [
                 {
                     stackName: "Figma",
@@ -81,7 +84,7 @@ const data = {
             ]
         },
         {
-            fieldName: "Graphic Design",
+            skillName: "Graphic Design",
             stack: [
                 {
                     stackName: "Photoshop",
@@ -98,7 +101,7 @@ const data = {
             ]
         },
         {
-            fieldName: "Software Development",
+            skillName: "Software Development",
             stack: [
                 {
                     stackName: "C#",
@@ -111,6 +114,19 @@ const data = {
                 {
                     stackName: ".Net",
                     level:"intermediate"
+                }
+            ]
+        }, 
+        {
+            skillName: "Content Management System",
+            stack: [
+                {
+                    stackName: "Wordpress",
+                    level:"beginner"
+                },
+                {
+                    stackName: "Webflow",
+                    level:"beginner"
                 }
             ]
         }
@@ -139,5 +155,3 @@ const data = {
     ]
 
 }
-
-export default data;
