@@ -1,6 +1,6 @@
 import React from "react";
 
-const Button = ({ style, shape, variant, type, toggle, children }) => {
+const Button = ({ style, shape, variant, type, toggle, link, children }) => {
   
   const ButtonStyle = {
     filled: "bg-slate-300 dark:bg-transparent",
@@ -26,9 +26,19 @@ const Button = ({ style, shape, variant, type, toggle, children }) => {
   const classNames = ButtonStyle[style] + " " + ButtonShape[shape] + " " + ButtonVariant[variant] + " " + ButtonType[type];
 
   return (
-    <button type="button" onClick={toggle} className={classNames}>
-      {children}
-    </button>
+
+    link ? 
+    ( <a href={link} target="_blank">
+        <button type="button" onClick={toggle} className={classNames}>
+          {children}
+        </button>
+      </a> ) : (
+
+      <button type="button" onClick={toggle} className={classNames}>
+        {children}
+      </button>
+    )
+
   );
 };
 

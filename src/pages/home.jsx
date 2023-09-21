@@ -5,32 +5,28 @@ import Menu from "../components/navigation/menu";
 import Navbar from "../components/navigation/navbar";
 import Hero from "../sections/hero";
 import About from "../sections/about";
+import Extra from "../sections/extra";
 import Skills from "../sections/skills";
-import Experience from "../sections/experience";
 import Works from "../sections/works";
 import Cursor from "../components/cursor/cursor";
 import useDarkMode from "../theme";
 
-import data from "../data"
+import { data } from "../data"
 
 const Home = () => {
-
 
   const { isDarkMode, toggleDarkMode } = useDarkMode();
 
   return (
     <div className="dark:bg-dark-60 dark:text-dark-10 bg-white text-black">
 
-    <button onClick={handleSubmit}>Save Data to Firebase</button>
-
       <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
       <Menu />
-      <Hero />
-      <About />
-      <Experience />
-      {/* <Skills/> */}
+      <Hero intro={data.intro} quote={data.quote}/>
+      <About summary={data.summary} desc={data.desc} socials={data.socials}/>
+      <Skills skills={data.skills}/>
+      {/* <Extra/>  */}
       <Works />
-
       <Cursor />
     </div>
   );

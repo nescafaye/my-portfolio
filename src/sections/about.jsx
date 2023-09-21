@@ -1,8 +1,8 @@
 import React from "react";
 import Button from "../components/button/button";
-import { Icon } from "@iconify/react";
+import Icon from "../components/icon/icon";
 
-const About = () => {
+const About = ({ summary, desc, socials }) => {
   return (
     <div className="h-full flex flex-col xl:flex-row justify-center items-stretch  gap-8 xl:gap-4 px-8 md:px-28 lg:px-44 py-16 lg:py-32 border-2 border-black">
 
@@ -22,8 +22,7 @@ const About = () => {
       <div className="flex-1 space-y-8 xl:space-y-10 border-2">
 
         <div className="font-primary text-3xl lg:text-4xl font-bold">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et euismod
-            sapien Pellentesque habitant.
+            {summary}
         </div>
 
         <div className="font-secondary text-base lg:text-lg">
@@ -36,18 +35,15 @@ const About = () => {
         </div>
 
         <div className="flex gap-x-4">
-            <Button type="icon" style="filloutlined" shape="rounded">
-              <Icon icon="uit:linkedin-alt" width="22" className="mx-auto" />
-            </Button>
-            <Button type="icon" style="filloutlined" shape="rounded">
-              <Icon icon="akar-icons:github-outline-fill" width="22" className="mx-auto" />
-            </Button>
-            <Button type="icon" style="filloutlined" shape="rounded">
-              <Icon icon="simple-line-icons:social-behance" width="22" className="mx-auto" />
-            </Button>
-            <Button type="icon" style="filloutlined" shape="rounded">
-              <Icon icon="ph:dribbble-logo-light" width="24" className="mx-auto" />
-            </Button>
+          {
+            socials.map((social)=> {
+              return (
+                <Button type="icon" style="filloutlined" shape="rounded" link={social.socialUrl} key={social.socialName}>
+                  <Icon name={social.socialName}/>
+                </Button>
+              )
+            })
+          }
         </div>
 
       </div>
