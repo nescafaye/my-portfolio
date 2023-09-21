@@ -11,18 +11,22 @@ import Works from "../sections/works";
 import Cursor from "../components/cursor/cursor";
 import useDarkMode from "../theme";
 
-import handleSubmit from "../config/test_firebase";
-import { useRef } from "react";
+import data from "../data"
+import { addDoc, collection } from "@firebase/firestore"
+import { firestore } from "../config/firebase"
 
 const Home = () => {
 
-  const dataRef = useRef();
+  const handleSubmit = () => {
+    const ref = collection(firestore, "user"); // Firebase creates this automatically
 
-  const submithandler = (e) => {
-    e.preventDefault();
-    handleSubmit(dataRef.current.value);
-    dataRef.current.value = "";
-    console.log(dataRef.current.value)
+    try {
+      addDoc(ref, data).then(() => {
+        console.log("Data submitted successfully!");
+      });
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   const { isDarkMode, toggleDarkMode } = useDarkMode();
@@ -30,10 +34,7 @@ const Home = () => {
   return (
     <div className="dark:bg-dark-60 dark:text-dark-10 bg-white text-black">
 
-      <form onSubmit={submithandler}>
-        <input type="text" ref={dataRef} />
-        <button type="submit">Save</button>
-      </form>
+    <button onClick={handleSubmit}>Save Data to Firebase</button>
 
       <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
       <Menu />

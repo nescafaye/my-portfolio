@@ -1,4 +1,4 @@
-export const data = {
+const data = {
     name: "Faye Talay",
     intro: "I'm into Web, UI, and Design.",
     desc: "An aspiring developer and designer based at Cagayan Valley, Philippines.",
@@ -139,3 +139,5 @@ export const data = {
     ]
 
 }
+
+export default data;
