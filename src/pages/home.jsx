@@ -18,7 +18,7 @@ const Home = () => {
   const { isDarkMode, toggleDarkMode } = useDarkMode();
 
   return (
-    <div className="dark:bg-dark-60 dark:text-dark-10 bg-[#F6FDFF] text-black">
+    <div className="dark:bg-dark dark:text-light bg-light">
 
       <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
       <Menu />
@@ -37,15 +37,18 @@ const Home = () => {
 export default Home;
 
 // add icons x
-// hide nav on scroll -
+// show menu on scroll x
 // component styles x
 // dark mode x
-// neon styles -
-// responsive mobile design x
-// scroll animations -
+// responsive mobile design x 
 // custom scroll track x
-// cursor design x
-// prompt animation x
-// json data x -
+// json data x - copy
 // wrap reverse works x
 // images (database) x
+
+// neon styles -
+// show arrow on hover - works ????
+// cursor design x - edit 
+// prompt animation x - svg elements
+// scroll animations -
+// logo

@@ -18,8 +18,8 @@ const Skills = ({ skills }) => {
           {
             skills.map((skill, index) => {
               return (
-                <div className="space-y-8 lg:space-y-10 pb-8 lg:pb-10 border-b border-black dark:border-dark-10" key={index}>
-                  <div className="font-primary text-[52px] md:text-6xl lg:text-7xl font-bold leading-none break-words text-transparent dark-stroke">{skill.skillName}</div>
+                <div className="space-y-8 lg:space-y-10 pb-8 lg:pb-10 border-b border-black dark:border-light" key={index}>
+                  <div className="font-primary text-[52px] md:text-6xl lg:text-7xl font-bold leading-none break-words text-transparent neon-stroke">{skill.skillName}</div>
                   <div className="flex gap-2 flex-wrap">
                     {
                       skill.stack.map((stack, index) => {

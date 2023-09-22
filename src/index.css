@@ -2,14 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  cursor: none;
-
+:root {
+  --scrollbar-track-light: #F6FDFF; /* Light mode scrollbar track color */
+  --scrollbar-track-dark: theme('backgroundColor.dark'); /* Dark mode scrollbar track color */
 }
 
-.dark-stroke {
-  -webkit-text-stroke: 0.7px white !important;
-    mix-blend-mode: difference;
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  cursor: none;
+}
+
+.neon-stroke {
+  -webkit-text-stroke: 1px theme('backgroundColor.dark');
+}
+
+.dark .neon-stroke {
+  -webkit-text-stroke: 1px theme('colors.neon-pink');
+    
 }
 
 /* .light-stroke {
@@ -22,12 +34,14 @@ body {
       0 0 7px #fff,
       0 0 10px #fff,
       0 0 21px #fff,
-      0 0 42px #FF00C7,
-      0 0 82px #FF00C7,
-      0 0 92px #FF00C7,
-      0 0 102px #FF00C7,
-      0 0 151px #FF00C7;
+      0 0 42px theme('colors.neon-pink'),
+      0 0 82px theme('colors.neon-pink'),
+      0 0 92px theme('colors.neon-pink'),
+      0 0 102px theme('colors.neon-pink'),
+      0 0 151px theme('colors.neon-pink');
 } */
+
+/*========== Marquee ==========*/
 
 .marquee-animate {
   animation: scroll 8s linear infinite;
@@ -38,9 +52,11 @@ body {
   to {transform: translateX(-50%)}
 }
 
+/*========== Custom Cursor ==========*/
+
 .cursor {
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   background-color: #fff; /* Background color of the cursor */
   border: 4px solid #fff;
   border-radius: 50%;
@@ -60,9 +76,7 @@ body {
   }
 }
 
-
 /*========== Scrollbar ==========*/
-
 
 /* width */
 ::-webkit-scrollbar {
@@ -73,17 +87,21 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(173, 182, 191);
+  background: #3e3e43;
   border-radius: 20px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #888892; 
+  background: #55555a; 
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: transparent; 
+  background-color: var(--scrollbar-track-light); 
+}
+
+.dark ::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track-dark);
 }
 

@@ -7,23 +7,19 @@ const Works = ({ projects }) => {
       {projects.map((project, index) => {
 
         return (
-          <div className={`h-screen flex flex-col ${index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"}`} key={index}>
+          <div className={`h-full max-h-screen lg:h-screen flex flex-col ${index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"}`} key={index}>
             
-            <div className="flex-1 border overflow-hidden">
+            <div className="flex-1 border-x-[0.5px] border-b border-dark dark:border-neon-pink  overflow-hidden">
               <img src={project.projectImage} alt="" className="h-full w-full object-cover hover:scale-110 transition-transform duration-500"/>
             </div>
 
-            <div className="flex-1 space-y-10 border py-16 lg:py-32">
+            <div className="flex-1 space-y-10 border-x-[0.5px] border-b border-dark dark:border-neon-pink py-16 lg:py-32">
               
               <div className="w-5/6 mx-auto space-y-4">
                
-                <div className="font-primary text-5xl md:text-6xl lg:text-7xl font-bold text-transparent dark-stroke">
+                <div className="font-primary text-5xl md:text-6xl lg:text-7xl font-bold text-transparent neon-stroke">
                   {project.projectName}
                 </div>
-
-                {/* <div className="font-secondary font-semibold text-base lg:text-2xl">
-                  {project.projectSummary}
-                </div> */}
 
                 <div className="flex flex-wrap gap-2">
                   {

@@ -8,17 +8,18 @@ export default {
   theme: {
     extend: { 
       fontFamily: {
-        primary: ['Georgia', 'Times New Roman', 'Times', 'serif'],
+        primary: ['Space Mono', 'serif'],
         secondary: ['Urbanist', 'sans-serif']
       },
       colors: {
-        "dark-60": "#1B1B1E",
-        "dark-30": "#F392CE",
-        "dark-10": "#D9D9D9",
-        "accent-color-1": "#04B5E6",
-        "accent-color-2": "#7FD680",
-        "accent-color-3": "#E8E454"
-      }
+        light: "#EFFBFF",
+        dark: "#1B1B1E",
+        "neon-pink": "#F800C1",
+        "neon-blue": "#04B5E6",
+        "neon-yellow": "#7FD680",
+        "neon-green": "#E8E454",
+
+      },
     },
   },
   plugins: [],
