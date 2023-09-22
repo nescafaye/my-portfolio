@@ -7,6 +7,8 @@ import Hero from "../sections/hero";
 import About from "../sections/about";
 import Skills from "../sections/skills";
 import Works from "../sections/works";
+import Contact
+ from "../sections/contact";
 import Cursor from "../components/cursor/cursor";
 import Marquee from "../components/marquee/marquee";
 import useDarkMode from "../theme";
@@ -22,12 +24,14 @@ const Home = () => {
 
       <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
       <Menu />
+
       <Hero intro={data.intro} quote={data.quote}/>
       <Marquee text="Whatcha doin'" size="small"/>
-      <About summary={data.summary} desc={data.desc} socials={data.socials}/>
+      <About summary={data.summary} link={data.link} desc={data.desc} socials={data.socials}/>
       <Skills skills={data.skills}/>
       <Marquee text="Works" size="large"/>
       <Works projects={data.projects}/>
+      <Contact/>
 
       <Cursor />
     </div>

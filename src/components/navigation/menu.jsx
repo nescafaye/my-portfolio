@@ -33,8 +33,8 @@ const Menu = () => {
             <ul className='font-secondary text-sm flex gap-8 md:gap-10 px-8 md:px-12 py-3 rounded-full border-[1px] border-dark dark:border-neon-pink bg-light dark:bg-dark dark:backdrop-blur-lg dark:bg-opacity-40 uppercase'>
                 <li>Home</li>
                 <li>About</li>
-                <li>Works</li>
-                <li>Contacts</li>
+                <li>Work</li>
+                <li>Contact</li>
             </ul>
         </div>
     </div>

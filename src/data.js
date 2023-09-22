@@ -5,7 +5,7 @@ export const data = {
     summary: "An aspiring developer and designer based at Cagayan Valley, Philippines.",
     desc: "My style is your style",
     photo: "#",
-    link: "#",
+    link: "mailto:talayfaye@gmail.com",
     socials: [
         {
             socialName: "Linkedin",
@@ -134,7 +134,6 @@ export const data = {
     projects: [
         {
             projectName: "VanGo",
-            projectSummary:"An Online Van Reservation App",
             projectDesc: "academic project made chuchuchu",
             projectTags: [
                 "Laravel", "Javascript", "HTML", "SASS", "Livewire"
@@ -144,7 +143,6 @@ export const data = {
         },
         {
             projectName: "Recipe App",
-            projectSummary:"CRUD",
             projectDesc: "academic project made chuchuchu",
             projectTags: [
                 "React", "Tailwind" 

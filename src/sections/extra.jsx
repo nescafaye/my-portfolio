@@ -11,7 +11,7 @@ const Extra = () => {
       <div className="space-y-8">
 
       <div className="space-y-8 pb-8 border-b border-black">
-            <div className="font-serif font-semibold text-7xl text-transparent dark-stroke">Web Development</div>
+            <div className="font-serif font-semibold text-7xl text-transparent neon-stroke">Web Development</div>
             <div className="flex gap-2">
               <Chip>HTML</Chip>
               <Chip>Javascript</Chip>
@@ -19,7 +19,7 @@ const Extra = () => {
           </div>
 
           <div className="space-y-6 pb-6 border-b border-black">
-            <div className="font-serif font-semibold text-7xl text-transparent dark-stroke">UI/UX Design</div>
+            <div className="font-serif font-semibold text-7xl text-transparent neon-stroke">UI/UX Design</div>
             <div className="flex gap-2">
               <Chip>HTML</Chip>
               <Chip>Javascript</Chip>
@@ -27,7 +27,7 @@ const Extra = () => {
           </div>
 
           <div className="space-y-6 pb-6 border-b border-black">
-            <div className="font-serif font-semibold text-7xl text-transparent dark-stroke">Graphic Design</div>
+            <div className="font-serif font-semibold text-7xl text-transparent neon-stroke">Graphic Design</div>
             <div className="flex gap-2">
               <Chip>HTML</Chip>
               <Chip>Javascript</Chip>
@@ -35,7 +35,7 @@ const Extra = () => {
           </div>
 
           <div className="space-y-6 pb-6 border-b border-black">
-            <div className="font-serif font-semibold text-7xl text-transparent dark-stroke">Programming</div>
+            <div className="font-serif font-semibold text-7xl text-transparent neon-stroke">Programming</div>
             <div className="flex gap-2">
               <Chip>HTML</Chip>
               <Chip>Javascript</Chip>
@@ -43,7 +43,7 @@ const Extra = () => {
           </div>
 
           <div className="space-y-6 pb-6 border-b border-black">
-            <div className="font-serif font-semibold text-7xl text-transparent dark-stroke">Content Management System</div>
+            <div className="font-serif font-semibold text-7xl text-transparent neon-stroke">Content Management System</div>
             <div className="flex gap-2">
               <Chip>HTML</Chip>
               <Chip>Javascript</Chip>

@@ -8,7 +8,7 @@ const Chip = ({shape, variant,children}) => {
   };
   
   const ChipVariant = {
-    regular: "dark:bg-[#232324] dark:text-[#72727B] border-none",
+    regular: "bg-[#D0E2E7] text-[#89979A] dark:bg-[#232324] dark:text-[#72727B] border-none",
     beginner: "border-dark dark:border-neon-blue",
     intermediate: "border-dark dark:border-neon-yellow",
     advanced: "border-dark dark:border-neon-green"

@@ -12,7 +12,7 @@ const Marquee = ({ text, size }) => {
         <span key={i} className="whitespace-nowrap">
           {text}
         </span>
-        <img className="w-16 h-16" src={sparkle} alt="sparkle"/> 
+        <img className="w-16 h-16 stroke-color" src={sparkle} alt="sparkle"/> 
       </>
     );
   }
@@ -25,7 +25,7 @@ const Marquee = ({ text, size }) => {
   const classNames = "h-full w-full flex items-center gap-x-10 font-primary font-bold marquee-animate" + " " + TextSize[size]
 
   return (
-    <div className="w-full py-4 lg:py-5 mt-20 overflow-hidden relative border-y border-dark dark:border-neon-pink text-transparent neon-stroke">
+    <div className="w-full py-4 lg:py-5 mt-20 overflow-hidden relative border-y border-dark dark:border-neon-pink text-transparent neon-stroke text-glow">
 
       <div className={classNames}>
             {items} {items}
