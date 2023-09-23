@@ -20,7 +20,7 @@ const Home = () => {
   const { isDarkMode, toggleDarkMode } = useDarkMode();
 
   return (
-    <div className="dark:bg-dark dark:text-light bg-light">
+    <div className="dark:bg-dark dark:text-light bg-light text-dark-2">
 
       <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
       <Menu />
@@ -29,11 +29,11 @@ const Home = () => {
       <Marquee text="Whatcha doin'" size="small"/>
       <About summary={data.summary} link={data.link} desc={data.desc} socials={data.socials}/>
       <Skills skills={data.skills}/>
-      <Marquee text="Works" size="large"/>
+      <Marquee text="Works" size="large" isDarkMode={isDarkMode}/>
       <Works projects={data.projects}/>
       <Contact/>
 
-      <Cursor />
+      {/* <Cursor /> */}
     </div>
   );
 };
@@ -49,10 +49,11 @@ export default Home;
 // json data x - copy
 // wrap reverse works x
 // images (database) x
+// prompt animation x 
+// svg elements x
 
 // neon styles -
 // show arrow on hover - works ????
 // cursor design x - edit 
-// prompt animation x - svg elements
 // scroll animations -
 // logo

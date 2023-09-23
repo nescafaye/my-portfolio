@@ -10,7 +10,7 @@ const Menu = () => {
     const handleScroll = () => {
 
        // Calculate the height of the hero section
-       const heroSectionHeight = 500; // Change this value to match your hero section's height
+       const heroSectionHeight = 1000; // Change this value to match your hero section's height
 
        // Check if the user has scrolled past the hero section
        const shouldShowMenu = window.scrollY > heroSectionHeight;

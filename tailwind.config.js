@@ -12,8 +12,9 @@ export default {
         secondary: ['Urbanist', 'sans-serif']
       },
       colors: {
-        light: "#EFFBFF",
+        light: "#F7F4F2",
         dark: "#131315",
+        "dark-2": "#333333",
         "neon-pink": "#F800C1",
         "neon-blue": "#04B5E6",
         "neon-green": "#7FD680",

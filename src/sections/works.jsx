@@ -17,7 +17,7 @@ const Works = ({ projects }) => {
               
               <div className="w-5/6 mx-auto space-y-6">
                
-                <div className="font-primary text-5xl md:text-6xl lg:text-7xl font-bold text-transparent neon-stroke text-glow">
+                <div className="font-primary text-5xl md:text-6xl lg:text-7xl font-bold dark:text-transparent neon-stroke text-glow">
                   {project.projectName}
                 </div>
 
