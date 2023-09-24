@@ -14,6 +14,7 @@ import Marquee from "../components/marquee/marquee";
 import useDarkMode from "../theme";
 
 import { data } from "../data"
+import Other from "../sections/other";
 
 const Home = () => {
 
@@ -31,6 +32,7 @@ const Home = () => {
       <Skills skills={data.skills}/>
       <Marquee text="Works" size="large" isDarkMode={isDarkMode}/>
       <Works projects={data.projects}/>
+      <Other/>
       <Contact/>
 
       {/* <Cursor /> */}

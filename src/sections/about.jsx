@@ -15,7 +15,7 @@ const About = ({ summary, link, desc, socials }) => {
             Photo here
         </div>
         <div className="space-x-2 xl:space-x-4">
-            <Button type="text" style="filloutlined" shape="rounded" link={link}>Contact Me</Button>
+            <Button type="text" style="outlined" shape="rounded" link={link}>Contact Me</Button>
         </div>
       </div>
 

@@ -80,13 +80,23 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
+  background: #dfdddb;
+  border-radius: 20px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
   background: #3e3e43;
   border-radius: 20px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #55555a; 
+  background: #c0bebc; 
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #55555a;
+  border-radius: 20px;
 }
 
 /* Track */

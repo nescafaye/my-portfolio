@@ -142,6 +142,15 @@ export const data = {
             projectLink: "#"
         },
         {
+            projectName: "Productivity App",
+            projectDesc: "academic project made chuchuchu",
+            projectTags: [
+                "React", "Tailwind" 
+            ],
+            projectImage: "#",
+            projectLink: "#"
+        },
+        {
             projectName: "Recipe App",
             projectDesc: "academic project made chuchuchu",
             projectTags: [

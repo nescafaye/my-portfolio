@@ -7,9 +7,9 @@ const Works = ({ projects }) => {
       {projects.map((project, index) => {
 
         return (
-          <div className={`h-full lg:h-[80vh] flex flex-col ${index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"}`} key={index}>
+          <div className={`h-full md:h-[80vh] lg:h-screen flex flex-col ${index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"}`} key={index}>
             
-            <div className="flex-1 border-x-[0.5px] border-b border-dark dark:border-neon-pink  overflow-hidden">
+            <div className="flex-1 border-x-[0.5px] border-b border-dark dark:border-neon-pink overflow-clip">
               <img src={project.projectImage} alt="" className="h-full w-full object-cover hover:scale-110 transition-transform duration-500"/>
             </div>
 
@@ -17,7 +17,7 @@ const Works = ({ projects }) => {
               
               <div className="w-5/6 mx-auto space-y-6">
                
-                <div className="font-primary text-5xl md:text-6xl lg:text-7xl font-bold dark:text-transparent neon-stroke text-glow">
+                <div className="font-primary text-5xl md:text-6xl lg:text-7xl font-bold dark:text-transparent neon-stroke text-glow break-words">
                   {project.projectName}
                 </div>
 
