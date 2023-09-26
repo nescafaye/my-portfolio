@@ -7,7 +7,7 @@ const Works = ({ projects }) => {
       {projects.map((project, index) => {
 
         return (
-          <section className={`h-full md:h-[80vh] lg:h-screen flex flex-col ${index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"}`} key={index}>
+          <section id="work" className={`h-full md:h-[80vh] lg:h-screen flex flex-col ${index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"}`} key={index}>
             
             <div className="w-full md:w-1/2 flex-1 border-y border-dark dark:border-neon-pink overflow-clip">
               <img src={project.projectImage} alt="" className="h-full w-full object-cover hover:scale-110 transition-transform duration-500"/>
