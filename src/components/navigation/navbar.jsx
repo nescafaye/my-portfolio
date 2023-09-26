@@ -8,7 +8,7 @@ const Navbar = ({ isDarkMode, toggleDarkMode }) => {
 
   return (
     // <div className='h-screen'>
-        <div className='flex w-full justify-between items-center px-6 py-4 md:px-8 md:py-6 sticky top-0 z-50'>
+        <nav className='flex w-full justify-between items-center px-6 py-4 md:px-8 md:py-6 sticky top-0 z-50'>
             
             <div>Logo here</div>
 
@@ -21,7 +21,7 @@ const Navbar = ({ isDarkMode, toggleDarkMode }) => {
                 </Button>
 
             </div>
-        </div>
+        </nav>
     // </div>
   )
 }

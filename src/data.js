@@ -147,7 +147,7 @@ export const data = {
             projectTags: [
                 "React", "Tailwind" 
             ],
-            projectImage: "#",
+            projectImage: "https://storage.googleapis.com/portfolio_photos/VanGo.png",
             projectLink: "#"
         },
         {
@@ -156,7 +156,7 @@ export const data = {
             projectTags: [
                 "React", "Tailwind" 
             ],
-            projectImage: "#",
+            projectImage: "https://storage.googleapis.com/portfolio_photos/VanGo.png",
             projectLink: "#"
         },
     ]

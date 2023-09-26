@@ -3,7 +3,7 @@ import Chip from "../components/chip/chip";
 
 const Skills = ({ skills }) => {
   return (
-    <div className="h-full flex flex-col lg:flex-row gap-8 px-8 md:px-28  py-16 lg:py-32">
+    <section className="h-full flex flex-col lg:flex-row gap-8 px-8 md:px-28  py-16 lg:py-32">
 
       <div className="w-full xl:w-1/4 h-fit lg:sticky lg:top-20 xl:top-24">
         <div className="font-secondary text-5xl lg:text-6xl xl:text-7xl font-bold lg:break-words">
@@ -38,7 +38,7 @@ const Skills = ({ skills }) => {
 
       </div>
 
-    </div>
+    </section>
   );
 };
 

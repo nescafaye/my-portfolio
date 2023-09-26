@@ -7,13 +7,13 @@ const Works = ({ projects }) => {
       {projects.map((project, index) => {
 
         return (
-          <div className={`h-full md:h-[80vh] lg:h-screen flex flex-col ${index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"}`} key={index}>
+          <section className={`h-full md:h-[80vh] lg:h-screen flex flex-col ${index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"}`} key={index}>
             
-            <div className="w-full md:w-1/2 flex-1 border-x-[0.5px] border-b border-dark dark:border-neon-pink overflow-clip">
+            <div className="w-full md:w-1/2 flex-1 border-y border-dark dark:border-neon-pink overflow-clip">
               <img src={project.projectImage} alt="" className="h-full w-full object-cover hover:scale-110 transition-transform duration-500"/>
             </div>
 
-            <div className="w-full md:w-1/2 flex-1 space-y-10 border-x-[0.5px] border-b border-dark dark:border-neon-pink py-16 lg:py-32">
+            <div className="w-full md:w-1/2 flex-1 space-y-10 border-y border-dark dark:border-neon-pink py-16 lg:py-32">
               
               <div className="w-5/6 mx-auto space-y-6">
                
@@ -42,7 +42,7 @@ const Works = ({ projects }) => {
               </div>
 
             </div>
-          </div>
+          </section>
         );
       })}
     </>

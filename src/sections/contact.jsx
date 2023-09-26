@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className='h-full px-8 md:px-28  py-16 lg:py-32 space-y-6'>
+    <footer className='h-full px-8 md:px-28  py-16 lg:py-32 space-y-6'>
         <div className='h-96 flex items-center uppercase font-primary font-bold text-[100px] md:text-[150px] lg:text-[200px] leading-tight dark:text-transparent neon-stroke text-glow'>
             Say hello
         </div>
@@ -24,12 +24,15 @@ const Contact = () => {
               </ul>
             </div>
         </div>
-      <div className='pt-6 lg:border-t border-dark-2 dark:border-light'>
+      <div className='flex flex-row justify-between pt-6 opacity-30 lg:border-t border-dark-2 dark:border-light'>
         <div className='font-secondary text-sm'>
           &copy; 2023
         </div>
+        <div className='font-secondary text-sm'>
+          design and code by faye
+        </div>
       </div>
-    </div>
+    </footer>
   )
 }
 

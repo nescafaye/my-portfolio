@@ -28,11 +28,11 @@
 .dark .text-glow {
   animation: flicker 0.5s infinite alternate;
   text-shadow:
-      0 0 150px var(--neon-pink),
+      0 0 250px var(--neon-pink),
       0 0 6px var(--dark),
       0 0 50px var(--dark),
-      0 0 4px var(--neon-pink),
-      0 0 8px var(--neon-pink);
+      0 0 2px var(--neon-pink),
+      0 0 4px var(--neon-pink);
 }
 
 /*========== Marquee ==========*/

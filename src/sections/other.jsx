@@ -19,7 +19,7 @@ const Other = () => {
   };
 
   return (
-    <div className='px-0 md:px-28 py-16 space-y-8 overflow-hidden'>
+    <section className='px-0 md:px-28 py-16 space-y-8 overflow-hidden'>
 
       <div className='flex justify-end gap-4 px-8 md:px-0'>
         <Button toggle={scrollLeft} type="icon" style="outlined" shape="rounded">
@@ -68,7 +68,7 @@ const Other = () => {
           </div>
 
       </div>
-    </div>
+    </section>
   )
 }
 

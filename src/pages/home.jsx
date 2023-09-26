@@ -54,7 +54,7 @@ export default Home;
 // prompt animation x 
 // svg elements x
 
-// neon styles -
+// neon styles - 
 // show arrow on hover - works ????
 // cursor design x - edit 
 // scroll animations -
