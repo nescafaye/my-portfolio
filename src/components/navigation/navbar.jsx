@@ -8,7 +8,7 @@ const Navbar = ({ isDarkMode, toggleDarkMode }) => {
 
   return (
     // <div className='h-screen'>
-        <nav className='flex w-full justify-between items-center px-6 py-4 md:px-8 md:py-6 sticky top-0 z-50'>
+        <nav className='flex w-full justify-between items-center px-6 md:px-8 sticky top-6 z-50'>
             
             <div>Logo here</div>
 
@@ -17,7 +17,7 @@ const Navbar = ({ isDarkMode, toggleDarkMode }) => {
                 <Button type="text" style="filloutlined" shape="rounded">Download Resume</Button>
 
                 <Button toggle={toggleDarkMode} type="icon" style="filloutlined" shape="rounded">
-                  <Icon icon={isDarkMode ? "iconamoon:mode-light" : "iconamoon:mode-dark"} width="18" className="mx-auto" />
+                  <Icon icon={isDarkMode ? "iconamoon:mode-light" : "iconamoon:mode-dark"} width="25" className="mx-auto" />
                 </Button>
 
             </div>

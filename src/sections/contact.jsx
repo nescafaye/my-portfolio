@@ -8,7 +8,7 @@ const Contact = () => {
         </div>
         <div className='w-full lg:w-3/4 h-full flex flex-col lg:flex-row lg:justify-between lg:items-end gap-y-8'>
             <div>
-              <ul className='font-primary text-3xl lg:text-5xl space-y-2 pb-8 lg:pb-0 border-b lg:border-none'>
+              <ul className='font-secondary text-3xl lg:text-6xl space-y-2 pb-8 lg:pb-0 border-b lg:border-none'>
                 <li>Home</li>
                 <li>About</li>
                 <li>Work</li>
@@ -16,7 +16,7 @@ const Contact = () => {
               </ul>
             </div>
             <div>
-              <ul className='font-primary text-3xl lg:text-5xl space-y-2 pb-8 lg:pb-0 border-b lg:border-none'>
+              <ul className='font-secondary text-3xl lg:text-6xl space-y-2 pb-8 lg:pb-0 border-b lg:border-none'>
                   <li>LinkedIn</li>
                   <li>Github</li>
                   <li>Behance</li>
@@ -24,7 +24,7 @@ const Contact = () => {
               </ul>
             </div>
         </div>
-      <div className='flex flex-row justify-between pt-6 opacity-30 lg:border-t border-dark-2 dark:border-light'>
+      <div className='flex flex-row justify-between pt-6 opacity-50 lg:border-t border-dark-2 dark:border-light'>
         <div className='font-secondary text-sm'>
           &copy; 2023
         </div>

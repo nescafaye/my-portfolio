@@ -10,7 +10,7 @@ const Menu = () => {
     const handleScroll = () => {
 
        // Calculate the height of the hero section
-       const heroSectionHeight = 1000; // Change this value to match your hero section's height
+       const heroSectionHeight = 200; // Change this value to match your hero section's height
 
        // Check if the user has scrolled past the hero section
        const shouldShowMenu = window.scrollY > heroSectionHeight;
@@ -30,7 +30,7 @@ const Menu = () => {
     <nav>
         <div className={`flex w-full justify-center fixed z-50 
         transition-transform duration-300 ease-in-out transform ${isMenuVisible ? 'translate-y-0 bottom-10' : 'translate-y-full bottom-0'}`}>
-            <ul className='font-secondary text-sm flex gap-8 md:gap-10 px-8 md:px-12 py-3 rounded-full border-[1px] border-dark dark:border-neon-pink bg-light dark:bg-dark dark:backdrop-blur-lg dark:bg-opacity-40 uppercase'>
+            <ul className='font-secondary text-sm flex items-center gap-8 md:gap-10 px-8 md:px-12 py-3 rounded-full border-[1px] border-dark dark:border-neon-pink bg-light dark:bg-dark dark:backdrop-blur-lg dark:bg-opacity-40 uppercase'>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#work">Work</a></li>

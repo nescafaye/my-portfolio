@@ -23,7 +23,7 @@ const Marquee = ({ text, size, isDarkMode }) => {
 
   const TextSize = {
     small: "text-5xl gap-x-8",
-    large: "text-5xl gap-x-8 lg:text-8xl lg:gap-x-10",
+    large: "text-5xl gap-x-8 lg:text-9xl lg:gap-x-10",
   };
 
   const classNames =

@@ -19,8 +19,8 @@ const Button = ({ style, shape, variant, type, toggle, link, children }) => {
   };
 
   const ButtonType = {
-    text: "font-secondary text-sm md:text-base px-6 py-2",
-    icon: "w-[38px] h-[38px] md:w-[42px] md:h-[42px]"
+    text: "font-secondary text-sm md:text-base px-8 h-[42px] md:h-[60px] uppercase",
+    icon: "w-[42px] h-[42px] md:w-[60px] md:h-[60px]"
   }
 
   const classNames = ButtonStyle[style] + " " + ButtonShape[shape] + " " + ButtonVariant[variant] + " " + ButtonType[type];
