@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Button from '../button/button'
 import { Icon } from "@iconify/react";
 import { useMediaQuery } from 'react-responsive';
@@ -16,9 +16,27 @@ const Navbar = ({ isDarkMode, toggleDarkMode }) => {
     setModalOpen(!isModalOpen); // Toggle the modal's state
   };
 
+  const [scrollingUp, setScrollingUp] = useState(true);
+
+  useEffect(() => {
+    let prevScrollPos = window.pageYOffset;
+
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      setScrollingUp(prevScrollPos > currentScrollPos);
+      prevScrollPos = currentScrollPos;
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     // <div className='h-screen'>
-        <nav className='flex w-full justify-between items-center px-6 md:px-8 sticky top-6 z-50'>
+        <nav className={`flex w-full justify-between items-center px-6 md:px-8 sticky z-50 transition-transform duration-300 ease-in-out transform ${scrollingUp ? 'translate-y-0 top-6' : '-translate-y-full -top-1'}`}>
 
             <div className='font-primary text-4xl font-bold'>f.</div>   
 
