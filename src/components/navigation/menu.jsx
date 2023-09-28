@@ -1,4 +1,6 @@
 import React from 'react'
+import Button from '../button/button';
+import { Icon } from "@iconify/react";
 import { useEffect, useState } from 'react';
 
 const Menu = () => {
@@ -27,17 +29,22 @@ const Menu = () => {
    }, []);
   
   return (
-    <nav>
-        <div className={`flex w-full justify-center fixed z-50 
-        transition-transform duration-300 ease-in-out transform ${isMenuVisible ? 'translate-y-0 bottom-10' : 'translate-y-full bottom-0'}`}>
-            <ul className='font-secondary text-sm flex items-center gap-8 md:gap-10 px-8 md:px-12 py-3 rounded-full border-[1px] border-dark dark:border-neon-pink bg-light dark:bg-dark dark:backdrop-blur-lg dark:bg-opacity-40 uppercase'>
+
+      <nav className={`hidden md:flex w-full justify-center fixed z-50 transition-transform duration-300 ease-in-out transform ${isMenuVisible ? 'translate-y-0 bottom-10' : 'translate-y-full bottom-0'}`}>
+          
+          <div className='font-secondary px-12 py-3 rounded-full md:border-[1px] md:border-dark md:dark:border-neon-pink bg-light dark:bg-dark dark:backdrop-blur-lg dark:bg-opacity-40 uppercase'>
+              
+              <ul className='text-sm flex flex-row gap-10'>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#work">Work</a></li>
                 <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+              </ul>
+
+          </div>
+
+      </nav>
+
   )
 }
 

@@ -27,12 +27,12 @@ const Marquee = ({ text, size, isDarkMode }) => {
   };
 
   const classNames =
-    "h-full w-full flex items-center gap-x-10 font-primary font-bold marquee-animate" +
+    "h-full w-full flex items-center gap-x-10 font-primary marquee-animate" +
     " " +
     TextSize[size];
 
   return (
-    <div className="w-full py-4 lg:py-5 mt-20 overflow-hidden relative border-y border-dark dark:border-neon-pink dark:text-transparent neon-stroke text-glow">
+    <div className="w-full z-0 py-4 lg:py-5 mt-20 overflow-hidden relative border-y border-dark dark:border-neon-pink dark:text-transparent neon-stroke text-glow">
       <div className={classNames}>
         {items} {items}
       </div>

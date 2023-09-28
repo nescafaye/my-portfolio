@@ -14,7 +14,7 @@ const Icon = ({ name }) => {
 
     return (
         <div>
-            <Iconify icon={iconName} width="30" className="mx-auto" />
+            <Iconify icon={iconName} width="20" className="mx-auto" />
         </div>
     )
 }

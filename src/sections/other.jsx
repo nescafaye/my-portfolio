@@ -34,7 +34,7 @@ const Other = () => {
 
           <div className='w-full xl:w-1/4 px-8 md:px-0'>
 
-            <div className="font-secondary text-5xl lg:text-6xl xl:text-7xl font-bold lg:break-words">
+            <div className="font-secondary text-5xl font-semibold lg:text-6xl xl:text-7xl lg:break-words">
                 Other Works
             </div>
 

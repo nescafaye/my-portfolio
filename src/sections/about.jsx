@@ -18,13 +18,13 @@ const About = ({ summary, link, desc, socials }) => {
 
       <div className="w-full lg:w-3/4 space-y-8 xl:space-y-10">
 
-        <div className="font-primary text-3xl lg:text-6xl font-bold">
+        <h3 className="font-primary text-3xl lg:text-6xl font-bold">
             {summary}
-        </div>
+        </h3>
 
-        <div className="font-secondary text-base">
+        <p className="font-secondary text-base">
             {desc}
-        </div>
+        </p>
 
         <div className="flex gap-x-4">
           {
