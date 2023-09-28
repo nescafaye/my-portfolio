@@ -27,7 +27,7 @@ const Marquee = ({ text, size, isDarkMode }) => {
   };
 
   const classNames =
-    "h-full w-full flex items-center gap-x-10 font-primary marquee-animate" +
+    "h-full w-full flex items-center gap-x-10 font-primary font-bold marquee-animate" +
     " " +
     TextSize[size];
 

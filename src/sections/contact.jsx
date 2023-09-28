@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <footer id='contact' className='h-full px-8 md:px-28  py-16 lg:py-32 space-y-6'>
+    <footer id='contact' className='h-full px-8 md:px-28  py-16 lg:py-32 space-y-6' >
         <h1 className='h-96 flex items-center uppercase font-primary font-bold text-[100px] md:text-[150px] lg:text-[200px] leading-none dark:text-transparent neon-stroke text-glow'>
             Say hello
         </h1>

@@ -7,18 +7,18 @@ const Works = ({ projects }) => {
       <section id="work" className="flex flex-col lg:flex-row justify-end gap-0 lg:gap-12">
 
         <div className="w-full lg:w-1/4 py-8 md:py-16">
-          <p className="px-8 md:px-16  font-secondary text-sm">
+          <p className="px-8 md:px-16 xl:px-28 font-secondary text-sm">
             The projects showcased in this section are personal undertakings created to both test and enhance my skills as a developer. 
           </p>
         </div>
 
-        <div className="w-full lg:w-[71%]">
+        <div className="w-full lg:w-3/4">
 
           {projects.map((project, index) => {
 
             return (
 
-              <div key={index} className={`h-full md:h-[80vh] flex flex-col ${index % 2 === 1 ? "lg:flex-row-reverse" : "lg:flex-row"}`}>
+              <div key={index} className={`h-full lg:h-[80vh] flex flex-col ${index % 2 === 1 ? "lg:flex-row-reverse" : "lg:flex-row"}`}>
 
                 {/* <table className=" border-collapse">
                 
@@ -43,7 +43,7 @@ const Works = ({ projects }) => {
                   
                   <div className="w-5/6 mx-auto space-y-6">
                   
-                    <div className="font-primary text-5xl md:text-6xl lg:text-8xl font-medium dark:text-transparent neon-stroke text-glow break-words">
+                    <div className="font-primary text-5xl md:text-6xl lg:text-8xl font-bold dark:text-transparent neon-stroke text-glow break-words">
                       {project.projectName}
                     </div>
 

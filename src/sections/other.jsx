@@ -19,7 +19,7 @@ const Other = () => {
   };
 
   return (
-    <section className='px-0 md:px-28 py-16 space-y-8 overflow-hidden'>
+    <section className='px-0 md:px-28 py-16 space-y-8 overflow-hidden' >
 
       <div className='flex justify-end gap-4 px-8 md:px-0'>
         <Button toggle={scrollLeft} type="icon" style="outlined" shape="rounded">
@@ -34,7 +34,7 @@ const Other = () => {
 
           <div className='w-full xl:w-1/4 px-8 md:px-0'>
 
-            <div className="font-secondary text-5xl font-semibold lg:text-6xl xl:text-7xl lg:break-words">
+            <div className="font-secondary lg:text-xl uppercase">
                 Other Works
             </div>
 
