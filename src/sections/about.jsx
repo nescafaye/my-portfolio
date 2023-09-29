@@ -18,7 +18,7 @@ const About = ({ summary, link, desc, socials }) => {
 
       <div className="w-full lg:w-3/4 space-y-8 xl:space-y-10">
 
-        <h3 className="font-primary text-3xl lg:text-6xl font-bold">
+        <h3 className="font-primary text-3xl lg:text-7xl font-bold">
             {summary}
         </h3>
 

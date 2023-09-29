@@ -21,7 +21,7 @@ const Home = () => {
   const { isDarkMode, toggleDarkMode } = useDarkMode();
 
   return (
-    <div className="dark:bg-dark dark:text-light bg-light text-dark-2 h-fit">
+    <div className="dark:bg-dark dark:text-light bg-light text-dark-2">
 
       <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode}/>
       <Menu/>

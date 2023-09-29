@@ -2,6 +2,7 @@ import { React, useState, useEffect } from "react";
 import sparkle from "../../assets/shape/sparkle.svg";
 import darkSparkle from "../../assets/shape/dark_sparkle.svg"
 
+
 const Marquee = ({ text, size, isDarkMode }) => {
 
   const num = 20;
@@ -10,10 +11,10 @@ const Marquee = ({ text, size, isDarkMode }) => {
   for (let i = 0; i < num; i++) {
     items.push(
       <>
-        <span key={i} className="whitespace-nowrap">
-          {text}
-        </span>
-          <img
+          <span key={`text-${i}`} className="whitespace-nowrap">
+            {text}
+          </span>
+          <img key={`sparkle-${i}`}
             className="w-16 h-16"
             src={isDarkMode ? (sparkle) : (darkSparkle)}
           />

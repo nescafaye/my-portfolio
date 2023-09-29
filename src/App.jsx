@@ -9,9 +9,9 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div className='dark:bg-dark dark:text-light bg-light text-dark-2'>
       <Home/>
-    </>
+    </div>
   )
 }
 
