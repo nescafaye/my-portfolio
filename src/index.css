@@ -25,26 +25,16 @@
     
 }
 
-.dark .text-glow {
+/* .dark .text-glow {
   animation: flicker 0.5s infinite alternate;
   text-shadow:
-      0 0 50px var(--neon-pink),
       0 0 0px var(--neon-pink),
       0 0 6px var(--dark),
-      0 0 50px var(--dark),
-      0 0 2px var(--neon-pink),
       0 0 4px var(--neon-pink);
-}
+} */
 
-/*========== Marquee ==========*/
-
-.marquee-animate {
-  animation: scroll 8s linear infinite;
-}
-
-@keyframes scroll {
-  from {transform: translateX(0)}
-  to {transform: translateX(-50%)}
+.clip-polygon {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 /*========== Custom Cursor ==========*/
@@ -108,4 +98,3 @@
 .dark ::-webkit-scrollbar-track {
   background-color: var(--dark);
 }
-
