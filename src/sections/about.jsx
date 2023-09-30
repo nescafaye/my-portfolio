@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Button from "../components/button/button";
 import Icon from "../components/icon/icon";
 
@@ -18,13 +19,23 @@ const About = ({ summary, link, desc, socials }) => {
 
       <div className="w-full lg:w-3/4 space-y-8 xl:space-y-10">
 
-        <h3 className="font-primary text-3xl lg:text-7xl font-bold">
+        <motion.h3 
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{duration: 1}}
+          viewport={{ once: true }}
+          className="font-primary text-3xl lg:text-7xl font-bold">
             {summary}
-        </h3>
+        </motion.h3>
 
-        <p className="font-secondary text-base">
+        <motion.p 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{duration: 1.2, delay: 0.1 }}
+          viewport={{ once: true }}
+          className="font-secondary text-base">
             {desc}
-        </p>
+        </motion.p>
 
         <div className="flex gap-x-4">
           {

@@ -25,11 +25,16 @@ const Home = () => {
 
       <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode}/>
       <Menu/>
+
       <Hero intro={data.intro} quote={data.quote} />
-      <Marquee text="Whatcha doin'" size="small"/>
+
+      <Marquee isDarkMode={isDarkMode} baseVelocity={5} text="Whatcha doin'" size="small"/>
+
       <About summary={data.summary} link={data.link} desc={data.desc} socials={data.socials}/>
       <Skills skills={data.skills}/>
-      <Marquee text="Works" size="large" isDarkMode={isDarkMode}/>
+
+      <Marquee baseVelocity={6} text="Works" size="large" isDarkMode={isDarkMode}>Works</Marquee>
+
       <Works projects={data.projects}/>
       <Other/>
       <Contact/>
