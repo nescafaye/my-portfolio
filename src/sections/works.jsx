@@ -18,32 +18,21 @@ const Works = ({ projects }) => {
 
             return (
 
-              <div key={index} className={`h-full lg:h-[80vh] flex flex-col ${index % 2 === 1 ? "lg:flex-row-reverse" : "lg:flex-row"}`}>
-
-                {/* <table className=" border-collapse">
+              <div key={index} className={`h-full lg:h-[80vh] flex flex-col ${index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"}`}>
                 
-                  <tbody className="">
-                    <tr>
-                      <td className="border border-black">
-                        fsdfs
-                      </td>
-                      <td className="border border-black">
-                        sdfdsfsd
-                      </td>
-                    </tr>
-                  </tbody>
-                
-                </table> */}
-                
-                <div className="w-full lg:w-1/2 flex-1 border-[0.1px] border-dark dark:border-neon-pink overflow-clip">
-                  <img src={project.projectImage} alt="" className="h-full w-full object-cover hover:scale-110 transition-transform duration-500"/>
+                <div className="w-full lg:w-1/2 flex-1 flex justify-center items-center border-[0.1px] border-dark dark:border-neon-pink">
+                  <div className="w-full h-full lg:h-[85%] lg:w-[85%] overflow-clip">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <img src={project.projectImage} alt={project.projectAlt} className="h-full w-full object-cover hover:scale-110 transition-transform duration-500"/>
+                    </a>
+                  </div>
                 </div>
 
                 <div className="w-full lg:w-1/2 flex-1 space-y-10 border-[0.1px] border-dark dark:border-neon-pink py-16">
                   
                   <div className="w-5/6 mx-auto space-y-6">
                   
-                    <div className="font-primary text-5xl md:text-6xl lg:text-8xl font-bold dark:text-transparent neon-stroke text-glow break-words">
+                    <div className="font-primary text-5xl lg:text-8xl font-bold dark:text-transparent neon-stroke text-glow break-words">
                       {project.projectName}
                     </div>
 

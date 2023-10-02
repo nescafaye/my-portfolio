@@ -36,7 +36,7 @@ const Home = () => {
       <Marquee baseVelocity={6} text="Works" size="large" isDarkMode={isDarkMode}>Works</Marquee>
 
       <Works projects={data.projects}/>
-      <Other/>
+      <Other otherProjects={data.otherProjects}/>
       <Contact/>
 
       {/* <Cursor /> */}

@@ -139,7 +139,8 @@ export const data = {
                 "Laravel", "Javascript", "HTML", "SASS", "Livewire"
             ],
             projectImage: "https://storage.googleapis.com/portfolio_photos/VanGo.png",
-            projectLink: "#"
+            projectLink: "#",
+            projectAlt: ""
         },
         {
             projectName: "Productivity App",
@@ -148,7 +149,8 @@ export const data = {
                 "React", "Tailwind" 
             ],
             projectImage: "https://storage.googleapis.com/portfolio_photos/VanGo.png",
-            projectLink: "#"
+            projectLink: "#",
+            projectAlt: ""
         },
         {
             projectName: "Recipe App",
@@ -157,8 +159,37 @@ export const data = {
                 "React", "Tailwind" 
             ],
             projectImage: "https://storage.googleapis.com/portfolio_photos/VanGo.png",
-            projectLink: "#"
+            projectLink: "#",
+            projectAlt: ""
         },
+    ],
+    otherProjects: [
+        {
+            projectImage: "https://images.unsplash.com/photo-1617785899222-fe06b15b6dd5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1771&q=80",
+            projectLink: "#",
+            projectAlt: ""
+        },
+        {
+            projectImage: "https://images.unsplash.com/photo-1561173477-f4a5fe106b32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1884&q=80",
+            projectLink: "#",
+            projectAlt: ""
+        },
+        {
+            projectImage: "https://images.unsplash.com/photo-1558155001-7e7e8b709e2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80",
+            projectLink: "#",
+            projectAlt: ""
+        },
+        {
+            projectImage: "https://images.unsplash.com/photo-1631016800696-5ea8801b3c2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1854&q=80",
+            projectLink: "#",
+            projectAlt: ""
+        },
+        {
+            projectImage: "https://images.unsplash.com/photo-1523206489230-c012c64b2b48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
+            projectLink: "#",
+            projectAlt: ""
+        },
+
     ]
 
 }
