@@ -158,17 +158,17 @@ export const data = {
             projectTags: [
                 "React", "Tailwind", "Axios", "Unsplash API" 
             ],
-            projectImage: "https://storage.googleapis.com/portfolio_photos/VanGo.png",
+            projectImage: "https://storage.googleapis.com/portfolio_photos/Unsplash-Mockup.png",
             projectLink: "#",
             projectAlt: ""
         },
         {
-            projectName: "Recipe App",
+            projectName: "Recipes App",
             projectDesc: "The Recipe App is a CRUD application developed using MERN stack that showcases a delightful collection of Filipino delicacies and dessert recipes.",
             projectTags: [
                 "React", "MongoDB", "Express.js", "Node.js", "Tailwind" 
             ],
-            projectImage: "https://storage.googleapis.com/portfolio_photos/VanGo.png",
+            projectImage: "https://storage.googleapis.com/portfolio_photos/Recipes-Mockup.png",
             projectLink: "#",
             projectAlt: ""
         },
