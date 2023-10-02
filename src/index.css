@@ -50,15 +50,12 @@ body {
 /*========== Custom Cursor ==========*/
 
 .cursor {
-  width: 20px;
-  height: 20px;
-  background-color: var(--neon-yellow); /* Background color of the cursor */
-  border: 4px solid var(--neon-yellow);
+  background-color: var(--light); /* Background color of the cursor */
+  mix-blend-mode: difference;
   border-radius: 50%;
   position: fixed;
   pointer-events: none;
   z-index: 9999;
-  animation: glow 1s ease infinite alternate; /* Add a glowing animation */
 }
 
 @keyframes glow {

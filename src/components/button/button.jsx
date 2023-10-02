@@ -19,7 +19,7 @@ const Button = ({ style, shape, variant, type, toggle, link, children }) => {
   };
 
   const ButtonType = {
-    text: "font-secondary text-sm md:text-sm px-6 h-[36px] md:h-[42px] uppercase",
+    text: "font-secondary text-sm md:text-sm px-8 h-[36px] md:h-[42px] uppercase",
     icon: "w-[36px] h-[36px] md:w-[42px] md:h-[42px]"
   }
 

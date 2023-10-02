@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion, useScroll } from "framer-motion"
 
-const Contact = () => {
+const Contact = ({ socials }) => {
 
   const fadeInUp = {
     from: { 
@@ -16,27 +16,30 @@ const Contact = () => {
         bounce: 0,
         duration: 2,
         ease: "easeIn",
-        delay: 0.5
+        delay: 0.2
       }
     },
   }
 
-  const staggerUp = {
-    from: { 
-      opacity: 0,
-      y: 80
-    },
-    to: { 
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
       opacity: 1,
-      y: 0,
       transition: {
-        type: "spring",
-        bounce: 0,
-        duration: 2,
-        ease: "easeIn",
-        delay: 0.5
+        staggerChildren: 0.2
       }
-    },
+    }
+  }
+  
+  const item = {
+    hidden: { opacity: 0,  y: 20 },
+    show: { opacity: 1, y: 0, transition: {
+      type: "spring",
+      bounce: 0,
+      duration: 1,
+      ease: "easeIn",
+      repeat: 0
+    } }
   }
 
   return (
@@ -51,20 +54,33 @@ const Contact = () => {
         </motion.h1>
         <div className='w-full lg:w-3/4 h-full flex flex-col lg:flex-row lg:justify-between lg:items-end gap-y-8'>
             <div>
-              <ul className='font-secondary text-3xl lg:text-6xl space-y-2 pb-8 lg:pb-0 border-b lg:border-none'>
-                <li>Home</li>
-                <li>About</li>
-                <li>Work</li>
-                <li>Contact</li>
-              </ul>
+              <motion.ul 
+                initial="hidden"
+                whileInView="show"
+                variants={container}
+                viewport={{ once: true }}
+                className='font-secondary text-3xl lg:text-6xl space-y-2 pb-8 lg:pb-0 border-b lg:border-none'>
+                <motion.li variants={item}>Home</motion.li>
+                <motion.li variants={item}>About</motion.li>
+                <motion.li variants={item}>Work</motion.li>
+                <motion.li variants={item}>Contact</motion.li>
+              </motion.ul>
             </div>
             <div>
-              <ul className='font-secondary text-3xl lg:text-6xl space-y-2 pb-8 lg:pb-0 border-b lg:border-none'>
-                  <li>LinkedIn</li>
-                  <li>Github</li>
-                  <li>Behance</li>
-                  <li>Email</li>
-              </ul>
+              <motion.ul
+              initial="hidden"
+              whileInView="show"
+              variants={container}
+              viewport={{ once: true }} 
+              className='font-secondary text-3xl lg:text-6xl space-y-2 pb-8 lg:pb-0 border-b lg:border-none'>
+                  {socials.map((social, index) => {
+                    return (
+                      <motion.li key={index} variants={item}>
+                        <a href={social.socialUrl} target="_blank" rel="noopener noreferrer">{social.socialName}</a>
+                      </motion.li>
+                    )
+                  })}
+              </motion.ul>
             </div>
         </div>
       <div className='flex flex-row justify-between pt-6 opacity-50 lg:border-t border-dark-2 dark:border-light'>

@@ -5,7 +5,7 @@ export const data = {
     summary: "Hello! My name is Faye Talay, a driven developer and designer based in the Philippines.",
     desc: "With a degree in Information Technology, my expertise encompasses not only web development but also the spectrum of creative design. I'm dedicated to crafting visually appealing web experiences that seamlessly blend aesthetics with functionality. My favorite design trends of 2023 are retro sticker bombs. utilitarian, and neu-brutalism. Embracing new ideas and a continuous willingness to learn are at the core of my approach. I appreciate the ever-evolving nature of the industry and always strive to stay ahead of the curve.",
     photo: "#",
-    link: "mailto:talayfaye@gmail.com",
+    link: "talayfaye@gmail.com",
     socials: [
         {
             socialName: "Linkedin",
@@ -134,19 +134,29 @@ export const data = {
     projects: [
         {
             projectName: "VanGo",
-            projectDesc: "academic project made chuchuchu",
+            projectDesc: "VanGo is a web-based van reservation platform designed to streamline van rental and reservation process by providing a seamless and efficient online booking and payment process, eliminating the hassle and uncertainty associated with traditional reservation methods. VanGo was a result of a collective effort, developed as a major deliverable for our capstone project and research.",
             projectTags: [
-                "Laravel", "Javascript", "HTML", "SASS", "Livewire"
+                "Laravel", "Javascript", "SASS", "Livewire", "MySQL"
             ],
             projectImage: "https://storage.googleapis.com/portfolio_photos/VanGo.png",
             projectLink: "#",
             projectAlt: ""
         },
         {
-            projectName: "Productivity App",
-            projectDesc: "academic project made chuchuchu",
+            projectName: "Gawi",
+            projectDesc: "Gawi is a versatile tool for productivity and focus, featuring a Pomodoro timer to enhance work intervals, a to-do checklist for task management, and ambient music to support concentration.",
             projectTags: [
-                "React", "Tailwind" 
+                "React", "Tailwind", "Typescript" 
+            ],
+            projectImage: "https://storage.googleapis.com/portfolio_photos/VanGo.png",
+            projectLink: "#",
+            projectAlt: ""
+        },
+        {
+            projectName: "Unsplash!",
+            projectDesc: "Unsplash! is a replica of Unsplash, offering a dynamic masonry image gallery powered by the Unsplash API. It includes a real-time image search engine, seamlessly fetching its data from Unsplash.",
+            projectTags: [
+                "React", "Tailwind", "Axios", "Unsplash API" 
             ],
             projectImage: "https://storage.googleapis.com/portfolio_photos/VanGo.png",
             projectLink: "#",
@@ -154,9 +164,9 @@ export const data = {
         },
         {
             projectName: "Recipe App",
-            projectDesc: "academic project made chuchuchu",
+            projectDesc: "The Recipe App is a CRUD application developed using MERN stack that showcases a delightful collection of Filipino delicacies and dessert recipes.",
             projectTags: [
-                "React", "Tailwind" 
+                "React", "MongoDB", "Express.js", "Node.js", "Tailwind" 
             ],
             projectImage: "https://storage.googleapis.com/portfolio_photos/VanGo.png",
             projectLink: "#",

@@ -37,9 +37,9 @@ const Home = () => {
 
       <Works projects={data.projects}/>
       <Other otherProjects={data.otherProjects}/>
-      <Contact/>
+      <Contact socials={data.socials}/>
 
-      {/* <Cursor /> */}
+      <Cursor />
     </div>
   );
 };

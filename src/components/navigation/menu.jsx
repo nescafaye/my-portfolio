@@ -32,7 +32,7 @@ const Menu = () => {
 
       <nav className={`hidden md:flex w-full justify-center fixed z-50 transition-transform duration-300 ease-in-out transform ${isMenuVisible ? 'translate-y-0 bottom-6' : 'translate-y-full bottom-0'}`}>
           
-          <div className='font-secondary px-12 py-3 rounded-full md:border-[1px] md:border-dark md:dark:border-neon-pink bg-light dark:bg-dark dark:backdrop-blur-lg dark:bg-opacity-40 uppercase'>
+          <div className='font-secondary px-12 py-3 rounded-full md:border-dark md:dark:border-neon-pink bg-light dark:bg-dark backdrop-blur-lg bg-opacity-60 uppercase'>
               
               <ul className='text-sm flex flex-row gap-10'>
                 <li><a href="#home">Home</a></li>

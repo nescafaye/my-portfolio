@@ -1,5 +1,5 @@
 import React from "react";
-import { motion, useScroll } from "framer-motion"
+import { easeInOut, motion, useScroll } from "framer-motion"
 import Chip from "../components/chip/chip";
 
 const Works = ({ projects }) => {
@@ -42,7 +42,14 @@ const Works = ({ projects }) => {
                 
                 <div className="w-full lg:w-1/2 flex-1 flex justify-center items-center border-[0.1px] border-dark dark:border-neon-pink"> 
                     <a href="#" target="_blank" rel="noopener noreferrer" className="w-full h-full overflow-clip">
-                      <img src={project.projectImage} alt={project.projectAlt} className="h-full w-full object-cover hover:scale-110 transition-transform duration-500"/>
+                      <motion.img 
+                      // initial={{ scale: 1 }}
+                      // whileInView={{ scale: 1.5 }}
+                      // transition={{ ease:"easeInOut" }}
+                      // src={project.projectImage}
+                      style={{ backgroundImage: `url(${project.projectImage})` }}
+                      alt={project.projectAlt} 
+                      className="h-full w-full bg-center bg-cover hover:scale-110 transition-transform duration-500"/>
                     </a>
                 </div>
 
@@ -79,7 +86,7 @@ const Works = ({ projects }) => {
                       whileInView="to"
                       variants={fadeIn}
                       viewport={{ once: true }}  
-                      className="font-secondary text-base lg:text-lg">
+                      className="font-secondary text-sm lg:text-base">
                       {project.projectDesc}
                     </motion.div>
 

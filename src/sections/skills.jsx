@@ -10,7 +10,7 @@ const Skills = ({ skills }) => {
         <h4 className="lg:text-xl font-semibold uppercase">
             What I Do
         </h4>
-        <div className="text-sm flex flex-row xl:flex-col gap-4">
+        <div className="text-sm flex flex-row xl:flex-col gap-2">
           <div className="flex flex-nowrap items-center gap-2">
             <div className="w-3 h-3 bg-neon-blue border border-dark-2 rounded-full"></div>
             <div>Beginner</div>
@@ -35,7 +35,6 @@ const Skills = ({ skills }) => {
               return (
                 <>
                   <div className="space-y-8 lg:space-y-10 pb-4" key={index}>
-                    
                     <motion.div 
                     initial={{ y: 100, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
@@ -64,7 +63,7 @@ const Skills = ({ skills }) => {
                   <motion.div 
                     initial={{ opacity: 0, width: "0%" }}
                     whileInView={{ opacity: 1, width: "100%" }}
-                    transition={{ duration: 1, ease: "easeIn" }}
+                    transition={{ duration: 1, ease: "easeIn"}}
                     viewport={{ once: true }}
                     className="w-full h-[0.5px] bg-black dark:bg-light">
                   </motion.div>

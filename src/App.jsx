@@ -9,9 +9,9 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <div className='max-w-[1920px] mx-auto'>
-        <Home/>
-    </div>
+    <>
+      <Home/>
+    </>
   )
 }
 
