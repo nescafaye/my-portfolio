@@ -1,11 +1,54 @@
 import React from 'react'
+import { motion, useScroll } from "framer-motion"
 
 const Contact = () => {
+
+  const fadeInUp = {
+    from: { 
+      opacity: 0,
+      y: 80
+    },
+    to: { 
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        bounce: 0,
+        duration: 2,
+        ease: "easeIn",
+        delay: 0.5
+      }
+    },
+  }
+
+  const staggerUp = {
+    from: { 
+      opacity: 0,
+      y: 80
+    },
+    to: { 
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        bounce: 0,
+        duration: 2,
+        ease: "easeIn",
+        delay: 0.5
+      }
+    },
+  }
+
   return (
-    <footer id='contact' className='h-full px-8 md:px-28  py-16 lg:py-32 space-y-6' >
-        <h1 className='h-96 flex items-center uppercase font-primary font-bold text-[100px] md:text-[150px] lg:text-[200px] leading-none dark:text-transparent neon-stroke text-glow'>
+    <footer id='contact' className='h-full px-8 md:px-28 py-16 lg:py-32 space-y-6 lg:space-y-20' >
+        <motion.h1
+        initial="from"
+        whileInView="to"
+        variants={fadeInUp}
+        viewport={{ once: true }}
+        className='h-96 flex items-center uppercase font-primary font-bold text-[100px] md:text-[150px] lg:text-[200px] leading-none dark:text-transparent neon-stroke text-glow'>
             Say hello
-        </h1>
+        </motion.h1>
         <div className='w-full lg:w-3/4 h-full flex flex-col lg:flex-row lg:justify-between lg:items-end gap-y-8'>
             <div>
               <ul className='font-secondary text-3xl lg:text-6xl space-y-2 pb-8 lg:pb-0 border-b lg:border-none'>

@@ -9,7 +9,7 @@ const Hero = ({intro, quote }) => {
 
   const ref = useRef(null);
 
-  const clip = {
+  const fadeInUp = {
     from: { 
       y: 100,
       opacity: 0
@@ -20,9 +20,6 @@ const Hero = ({intro, quote }) => {
       transition: {
         type: "spring",
         bounce: 0,
-        // staggerChildren: 0.05,
-        // staggerDirection: 1,
-        // delayChildren: 0.5,
         duration: 2,
         ease: "easeIn",
         repeat: 0
@@ -48,7 +45,7 @@ const Hero = ({intro, quote }) => {
           {intro}
       </motion.h4>
       <motion.h1 
-        variants={clip}
+        variants={fadeInUp}
         initial="from"
         whileInView="to"
         viewport={{ once: true }}

@@ -1,4 +1,5 @@
 import { React, useRef } from 'react';
+import { motion, useScroll } from "framer-motion"
 import Button from '../components/button/button'
 import { Icon } from "@iconify/react";
 
@@ -18,10 +19,29 @@ const Other = ({ otherProjects }) => {
     }
   };
 
-  return (
-    <section className='px-0 md:px-28 py-16 space-y-8 overflow-hidden' >
+  const fadeIn = {
+    from: { 
+      opacity: 0,
+    },
+    to: { 
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        ease: "easeIn",
+      }
+    },
+  }
 
-      <div className='flex justify-end gap-4 px-8 md:px-0'>
+  return (
+    <motion.section 
+    initial="from"
+    whileInView="to"
+    variants={fadeIn}
+    viewport={{ once: true }} 
+    className='px-0 md:px-28 py-16 space-y-8 overflow-hidden' 
+    >
+
+      <div className='hidden lg:flex justify-end gap-4 px-8 md:px-0'>
         <Button toggle={scrollLeft} type="icon" style="outlined" shape="rounded">
           <Icon icon="ion:arrow-back" width="22" className="mx-auto" />
         </Button>
@@ -34,13 +54,13 @@ const Other = ({ otherProjects }) => {
 
           <div className='w-full xl:w-1/4 px-8 md:px-0'>
 
-            <div className="font-secondary lg:text-xl uppercase">
+            <h4 className="font-secondary font-semibold lg:text-xl uppercase">
                 Other Works
-            </div>
+            </h4>
 
           </div>
 
-          <div className='w-full xl:w-3/4'>
+          <div className='w-full lg:w-3/4'>
 
             <div className='flex flex-row flex-nowrap gap-2 md:gap-4 lg:gap-8 overflow-x-auto' ref={sliderRef}>
 
@@ -62,7 +82,7 @@ const Other = ({ otherProjects }) => {
           </div>
 
       </div>
-    </section>
+    </motion.section>
   )
 }
 

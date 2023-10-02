@@ -1,15 +1,35 @@
 import React from "react";
+import { motion, useScroll } from "framer-motion"
 import Chip from "../components/chip/chip";
 
 const Works = ({ projects }) => {
+
+  const fadeIn = {
+    from: { 
+      opacity: 0
+    },
+    to: { 
+      opacity: 1,
+      transition: {
+        duration: 1,
+        ease: "easeIn",
+      }
+    },
+  }
+
   return (
     <>
       <section id="work" className="flex flex-col lg:flex-row justify-end gap-0 lg:gap-12">
 
         <div className="w-full lg:w-1/4 py-8 md:py-16">
-          <p className="px-8 md:px-16 xl:px-28 font-secondary text-sm">
+          <motion.p
+            initial="from"
+            whileInView="to"
+            variants={fadeIn}
+            viewport={{ once: true }} 
+            className="px-8 md:px-16 xl:px-28 font-secondary text-sm">
             The projects showcased in this section are personal undertakings created to both test and enhance my skills as a developer. 
-          </p>
+          </motion.p>
         </div>
 
         <div className="w-full lg:w-3/4">
@@ -20,19 +40,23 @@ const Works = ({ projects }) => {
 
               <div key={index} className={`h-full lg:h-[80vh] flex flex-col ${index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"}`}>
                 
-                <div className="w-full lg:w-1/2 flex-1 flex justify-center items-center border-[0.1px] border-dark dark:border-neon-pink">
-                  <div className="w-full h-full lg:h-[85%] lg:w-[85%] overflow-clip">
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                <div className="w-full lg:w-1/2 flex-1 flex justify-center items-center border-[0.1px] border-dark dark:border-neon-pink"> 
+                    <a href="#" target="_blank" rel="noopener noreferrer" className="w-full h-full overflow-clip">
                       <img src={project.projectImage} alt={project.projectAlt} className="h-full w-full object-cover hover:scale-110 transition-transform duration-500"/>
                     </a>
-                  </div>
                 </div>
 
                 <div className="w-full lg:w-1/2 flex-1 space-y-10 border-[0.1px] border-dark dark:border-neon-pink py-16">
                   
-                  <div className="w-5/6 mx-auto space-y-6">
+                  <motion.div 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{opacity: 1, y: 0 }} 
+                    transition={{duration: 1, type: "spring", bounce: 0, ease: "easeIn", delay: 0.2}}
+                    viewport={{ once: true }} 
+                  className="w-5/6 mx-auto space-y-6">
                   
-                    <div className="font-primary text-5xl lg:text-8xl font-bold dark:text-transparent neon-stroke text-glow break-words">
+                    <div 
+                      className="font-primary text-5xl lg:text-6xl xl:text-8xl font-bold dark:text-transparent neon-stroke text-glow break-words">
                       {project.projectName}
                     </div>
 
@@ -46,13 +70,18 @@ const Works = ({ projects }) => {
                       }
                     </div>
 
-                  </div>
+                  </motion.div>
 
                   <div className="w-5/6 mx-auto">
 
-                    <div className="font-secondary text-base lg:text-lg">
+                    <motion.div
+                      initial="from"
+                      whileInView="to"
+                      variants={fadeIn}
+                      viewport={{ once: true }}  
+                      className="font-secondary text-base lg:text-lg">
                       {project.projectDesc}
-                    </div>
+                    </motion.div>
 
                   </div>
 

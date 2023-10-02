@@ -4,11 +4,25 @@ import Chip from "../components/chip/chip";
 
 const Skills = ({ skills }) => {
   return (
-    <section className="h-full flex flex-col lg:flex-row gap-8 px-8 md:px-28 py-16 lg:py-32">
+    <section className="h-full flex flex-col xl:flex-row gap-8 px-8 md:px-28 py-16 xl:py-32">
 
-      <div className="w-full xl:w-1/4 h-fit lg:sticky lg:top-20 xl:top-24">
-        <div className="font-secondary lg:text-xl uppercase">
+      <div className="w-full xl:w-1/4 h-fit font-secondary lg:sticky xl:top-24 space-y-4">
+        <h4 className="lg:text-xl font-semibold uppercase">
             What I Do
+        </h4>
+        <div className="text-sm flex flex-row xl:flex-col gap-4">
+          <div className="flex flex-nowrap items-center gap-2">
+            <div className="w-3 h-3 bg-neon-blue border border-dark-2 rounded-full"></div>
+            <div>Beginner</div>
+          </div>
+          <div className="flex flex-nowrap items-center gap-2">
+            <div className="w-3 h-3 bg-neon-yellow border border-dark-2 rounded-full"></div>
+            <div>Intermediate</div>
+          </div>
+          <div className="flex flex-nowrap items-center gap-2">
+            <div className="w-3 h-3 bg-neon-green border border-dark-2 rounded-full"></div>
+            <div>Advanced</div>
+          </div>
         </div>
       </div>
 
