@@ -43,9 +43,6 @@ body {
       0 0 4px var(--neon-pink);
 } */
 
-.clip-polygon {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-}
 
 /*========== Custom Cursor ==========*/
 
@@ -58,13 +55,40 @@ body {
   z-index: 9999;
 }
 
-@keyframes glow {
-  0% {
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-  }
-  100% {
-    box-shadow: 0 0 80px rgb(226, 226, 226);
-  }
+/*========== Arrow button ==========*/
+
+.arrow-button {
+  position: absolute;
+  top: 10%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+  width: 65px;
+  height: 65px;
+  background-color: var(--light); /* Background color for the arrow button */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Add a transition for smooth fade-in/out and rotation */
+  transform-origin: center; /* Set the rotation origin to the center of the button */
+}
+
+.arrow-button::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url('./assets/cursor.svg');
+  background-size: 80%; /* Adjust as needed */
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(90deg);
+}
+
+/* Show the arrow button on hover and rotate it */
+a:hover .arrow-button {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(-45deg); /* Rotate the button 45 degrees upward */
 }
 
 /*========== Scrollbar ==========*/
