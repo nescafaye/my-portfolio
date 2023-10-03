@@ -27,7 +27,7 @@ const Works = ({ projects }) => {
             whileInView="to"
             variants={fadeIn}
             viewport={{ once: true }} 
-            className="px-8 md:px-16 xl:px-28 font-secondary text-sm">
+            className="px-8 md:px-24 xl:px-28 font-secondary text-sm">
             The projects showcased in this section are personal undertakings created to both test and enhance my skills as a developer. 
           </motion.p>
         </div>
@@ -40,18 +40,17 @@ const Works = ({ projects }) => {
 
               <div key={index} className={`h-full lg:h-[80vh] flex flex-col ${index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"}`}>
                 
-                <div className="w-full lg:w-1/2 flex-1 flex justify-center items-center border-[0.1px] border-dark dark:border-neon-pink"> 
-                    <a href="#" target="_blank" rel="noopener noreferrer" className="w-full h-full overflow-clip">
-                      <motion.img 
-                      // initial={{ scale: 1 }}
-                      // whileInView={{ scale: 1.5 }}
-                      // transition={{ ease:"easeInOut" }}
-                      // src={project.projectImage}
-                      style={{ backgroundImage: `url(${project.projectImage})` }}
-                      alt={project.projectAlt} 
-                      className="h-full w-full bg-center bg-cover hover:scale-110 transition-transform duration-500"/>
-                    </a>
+                <div className="w-full lg:w-1/2 flex-1 flex justify-center items-center border-[0.1px] border-dark dark:border-neon-pink relative">
+                  <a href={project.projectLink} target="_blank" rel="noopener noreferrer" className="w-full h-full overflow-clip relative">
+                    <img
+                      src={project.projectImage}
+                      alt={project.projectAlt}
+                      className="h-full w-full object-cover hover:scale-110 transition-transform duration-500"
+                    />
+                    <span className="arrow-button"></span>
+                  </a>
                 </div>
+
 
                 <div className="w-full lg:w-1/2 flex-1 space-y-10 border-[0.1px] border-dark dark:border-neon-pink py-16">
                   
@@ -60,10 +59,10 @@ const Works = ({ projects }) => {
                     whileInView={{opacity: 1, y: 0 }} 
                     transition={{duration: 1, type: "spring", bounce: 0, ease: "easeIn", delay: 0.2}}
                     viewport={{ once: true }} 
-                  className="w-5/6 mx-auto space-y-6">
+                    className="w-5/6 mx-auto space-y-6">
                   
                     <div 
-                      className="font-primary text-5xl lg:text-6xl xl:text-8xl font-bold dark:text-transparent neon-stroke text-glow break-words">
+                      className="font-primary text-5xl sm:text-6xl lg:text-7xl xl:text-[80px] font-bold dark:text-transparent neon-stroke text-glow break-words">
                       {project.projectName}
                     </div>
 

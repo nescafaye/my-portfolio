@@ -1,5 +1,4 @@
 import React from "react";
-import { useState, useEffect, useRef, useLayoutEffect } from "react";
 
 import Menu from "../components/navigation/menu";
 import Navbar from "../components/navigation/navbar";
@@ -28,7 +27,7 @@ const Home = () => {
 
       <Hero intro={data.intro} quote={data.quote} />
 
-      <Marquee isDarkMode={isDarkMode} baseVelocity={5} text="Whatcha doin'" size="small"/>
+      <Marquee isDarkMode={isDarkMode} baseVelocity={5} text="About" size="small"/>
 
       <About summary={data.summary} link={data.link} desc={data.desc} socials={data.socials}/>
       <Skills skills={data.skills}/>

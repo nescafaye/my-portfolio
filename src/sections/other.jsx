@@ -38,7 +38,7 @@ const Other = ({ otherProjects }) => {
     whileInView="to"
     variants={fadeIn}
     viewport={{ once: true }} 
-    className='px-0 md:px-28 py-16 space-y-8 overflow-hidden' 
+    className='px-0 md:px-24 py-16 space-y-8 overflow-hidden' 
     >
 
       <div className='hidden lg:flex justify-end gap-4 px-8 md:px-0'>
@@ -50,7 +50,7 @@ const Other = ({ otherProjects }) => {
         </Button>
       </div>
 
-      <div className='h-full w-full flex flex-col lg:flex-row gap-12'>
+      <div className='flex flex-col lg:flex-row gap-12'>
 
           <div className='w-full xl:w-1/4 px-8 md:px-0'>
 
@@ -67,7 +67,7 @@ const Other = ({ otherProjects }) => {
               {
                 otherProjects.map((other, index) => {
                   return (
-                    <div className='h-[36rem] min-w-[26rem] overflow-clip' key={index}>
+                    <div className='h-[30rem] min-w-[26rem] overflow-clip' key={index}>
                       <a href="#" target="_blank" rel="noopener noreferrer">
                         <img src={other.projectImage} alt={other.projectAlt}
                         className='h-full w-full object-cover hover:scale-110 transition-transform duration-500'/>

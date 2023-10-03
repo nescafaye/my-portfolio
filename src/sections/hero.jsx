@@ -28,12 +28,12 @@ const Hero = ({intro, quote }) => {
   }
 
   return (
-    <section ref={ref} id="home" className="h-full flex flex-col justify-start items-center px-8 md:px-28 py-20 gap-y-12">
+    <section ref={ref} id="home" className="h-full flex flex-col justify-start items-center px-8 md:px-24 py-20 gap-y-12">
       <motion.div 
       // initial={{ y: 0 }}
       // whileInView={{ y: 100 }}
       // transition={{ duration: 2 }}
-        className="hidden md:block absolute left-7 top-[50%]" style={{writingMode: 'vertical-rl', textOrientation: 'upright'}}>
+        className="hidden md:block absolute left-7 top-[30%] lg:top-[50%]" style={{writingMode: 'vertical-rl', textOrientation: 'upright'}}>
           {currentYear}
       </motion.div>
       <motion.h4
@@ -49,7 +49,7 @@ const Hero = ({intro, quote }) => {
         initial="from"
         whileInView="to"
         viewport={{ once: true }}
-        className={`w-full text-6xl md:text-8xl lg:text-[180px] font-bold font-primary uppercase dark:text-transparent neon-stroke text-glow break-words`}>
+        className={`w-full text-5xl md:text-7xl lg:text-[180px] font-bold font-primary uppercase dark:text-transparent neon-stroke text-glow break-words`}>
           {quote}
       </motion.h1>
     </section>

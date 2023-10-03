@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react'
 import Button from '../button/button'
 import { Icon } from "@iconify/react";
 import { useMediaQuery } from 'react-responsive';
-import Modal from '../modal/modal';
-import Hamburger from './hamburger';
 // import useDarkMode from '../../theme';
 
 const Navbar = ({ isDarkMode, toggleDarkMode }) => {
@@ -42,12 +40,12 @@ const Navbar = ({ isDarkMode, toggleDarkMode }) => {
 
             <div className='flex items-center space-x-2 lg:space-x-4'>
                 
-                <Button type={isMobile ? 'icon' : 'text'} style="filloutlined" shape="rounded">
+                <Button type={isMobile ? 'icon' : 'text'} style="outlined" shape="rounded">
                   {isMobile ? <Icon icon="carbon:document" width="18" className="mx-auto" /> 
                   : "Download Resume" }
                 </Button>
 
-                <Button toggle={toggleDarkMode} type="icon" style="filloutlined" shape="rounded">
+                <Button toggle={toggleDarkMode} type="icon" style="outlined" shape="rounded">
                   <Icon icon={isDarkMode ? "iconamoon:mode-light" : "iconamoon:mode-dark"} width="18" className="mx-auto" />
                 </Button>
 
