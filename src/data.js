@@ -138,7 +138,7 @@ export const data = {
             projectTags: [
                 "Laravel", "Javascript", "SASS", "Livewire", "MySQL"
             ],
-            projectImage: "https://storage.googleapis.com/portfolio_photos/VanGo.png",
+            projectImage: "https://storage.googleapis.com/portfolio_photos/VanGo-Mockup.png",
             projectLink: "#",
             projectAlt: ""
         },
@@ -148,7 +148,7 @@ export const data = {
             projectTags: [
                 "React", "Tailwind", "Typescript" 
             ],
-            projectImage: "https://storage.googleapis.com/portfolio_photos/VanGo.png",
+            projectImage: "https://storage.googleapis.com/portfolio_photos/VanGo-Mockup.png",
             projectLink: "#",
             projectAlt: ""
         },
@@ -159,11 +159,11 @@ export const data = {
                 "React", "Tailwind", "Axios", "Unsplash API" 
             ],
             projectImage: "https://storage.googleapis.com/portfolio_photos/Unsplash-Mockup.png",
-            projectLink: "#",
+            projectLink: "https://unsplash-api-five.vercel.app",
             projectAlt: ""
         },
         {
-            projectName: "Recipes App",
+            projectName: "Recipes CRUD",
             projectDesc: "The Recipe App is a CRUD application developed using MERN stack that showcases a delightful collection of Filipino delicacies and dessert recipes.",
             projectTags: [
                 "React", "MongoDB", "Express.js", "Node.js", "Tailwind" 
