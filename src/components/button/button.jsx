@@ -20,9 +20,9 @@ const Button = ({ style, shape, type, toggle, link, children }) => {
   const classNames = ButtonStyle[style] + " " + ButtonShape[shape] + " " + ButtonType[type] + " " + "backdrop-blur-lg bg-opacity-60 dark:backdrop-blur-lg dark:bg-opacity-60";
 
   return (
-
-    link ? 
-    ( <a href={link} target="_blank">
+  <>
+    { link ? ( 
+      <a href={link} target="_blank">
         <button type="button" onClick={toggle} className={classNames}>
           {children}
         </button>
@@ -31,8 +31,9 @@ const Button = ({ style, shape, type, toggle, link, children }) => {
       <button type="button" onClick={toggle} className={classNames}>
         {children}
       </button>
-    )
+    )}
 
+  </>
   );
 };
 
