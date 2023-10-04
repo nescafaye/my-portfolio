@@ -4,7 +4,7 @@ const Button = ({ style, shape, type, toggle, link, children }) => {
   
   const ButtonStyle = {
     filled: "bg-light dark:bg-dark",
-    outlined: "border border-dark dark:border-neon-pink bg-light dark:bg-dark",
+    outlined: "border border-dark dark:border-neon-pink bg-light dark:bg-dark hover:bg-dark-2 hover:text-light dark:hover:bg-neon-pink duration-200",
   };
 
   const ButtonShape = {
