@@ -71,6 +71,7 @@ const Marquee = ({ text, size, isDarkMode, children, baseVelocity = 100 }) => {
             {text}
           </span>
           <img key={`sparkle-${i}`}
+            alt="sparkle"
             className="w-16 h-16"
             src={isDarkMode ? (sparkle) : (darkSparkle)}
           />

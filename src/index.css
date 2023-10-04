@@ -26,13 +26,9 @@ body {
   color: var(--light);
 }
 
-.neon-stroke {
-  -webkit-text-stroke: 0px var(--dark-2);
-}
-
 .dark .neon-stroke {
-  -webkit-text-stroke: 1.5px var(--neon-pink);
-    
+  -webkit-text-fill-color: transparent; /* Make the text transparent */
+  -webkit-text-stroke: 1.5px var(--neon-pink); /* Text stroke with neon color */
 }
 
 /* .dark .text-glow {

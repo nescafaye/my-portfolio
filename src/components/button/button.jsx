@@ -1,10 +1,10 @@
 import React from "react";
 
-const Button = ({ style, shape, color, type, toggle, link, children }) => {
+const Button = ({ style, shape, type, toggle, link, children }) => {
   
   const ButtonStyle = {
     filled: "bg-light dark:bg-dark",
-    outlined: `border border-dark dark:border-neon-pink dark:border-${color} bg-${color} dark:bg-dark`,
+    outlined: "border border-dark dark:border-neon-pink bg-light dark:bg-dark",
   };
 
   const ButtonShape = {
@@ -17,7 +17,7 @@ const Button = ({ style, shape, color, type, toggle, link, children }) => {
     icon: "w-[36px] h-[36px] md:w-[42px] md:h-[42px]"
   }
 
-  const classNames = ButtonStyle[style] + " " + ButtonShape[shape] + " " + ButtonType[type];
+  const classNames = ButtonStyle[style] + " " + ButtonShape[shape] + " " + ButtonType[type] + " " + "backdrop-blur-lg bg-opacity-60 dark:backdrop-blur-lg dark:bg-opacity-60";
 
   return (
 
