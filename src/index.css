@@ -27,7 +27,7 @@ body {
 }
 
 .dark .stroke {
-  -webkit-text-stroke: 1px var(--light); /* Text stroke with neon color */
+  -webkit-text-stroke: 2px var(--light); /* Text stroke with neon color */
 }
 
 /*========== Custom Cursor ==========*/

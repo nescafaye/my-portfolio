@@ -49,7 +49,7 @@ const Navbar = ({ isDarkMode, toggleDarkMode }) => {
                   <Icon icon={isDarkMode ? "iconamoon:mode-light" : "iconamoon:mode-dark"} width="18" className="mx-auto" />
                 </Button>
 
-                <div className='block md:hidden'>
+                <div className='hidden'>
                   <Button toggle={toggleModal} type="icon" style="filled" shape="rounded">
                       <Icon icon="gg:menu-grid-o" width="18" className="mx-auto" />
                   </Button>

@@ -62,7 +62,7 @@ const Contact = ({ socials }) => {
                 whileInView="show"
                 variants={container}
                 viewport={{ once: true }}
-                className='font-secondary font-light italic text-3xl lg:text-6xl space-y-2 pb-8 lg:pb-0 border-b lg:border-none border-black dark:border-light'>
+                className='font-primary text-3xl lg:text-6xl space-y-2 pb-8 lg:pb-0 border-b lg:border-none border-black dark:border-light'>
                 <motion.li variants={item}><Link href={'#home'}>Home</Link></motion.li>
                 <motion.li variants={item}><Link href={'#about'}>About</Link></motion.li>
                 <motion.li variants={item}><Link href={'#work'}>Work</Link></motion.li>
@@ -75,7 +75,7 @@ const Contact = ({ socials }) => {
               whileInView="show"
               variants={container}
               viewport={{ once: true }} 
-              className='font-secondary font-light italic text-3xl lg:text-6xl space-y-2 pb-8 lg:pb-0 border-b lg:border-none border-black dark:border-light'>
+              className='font-primary text-3xl lg:text-6xl space-y-2 pb-8 lg:pb-0 border-b lg:border-none border-black dark:border-light'>
                   {socials.map((social, index) => {
                     return (
                       <motion.li key={index} variants={item}>

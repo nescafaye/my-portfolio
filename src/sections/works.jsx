@@ -27,7 +27,7 @@ const Works = ({ projects }) => {
             whileInView="to"
             variants={fadeIn}
             viewport={{ once: true }} 
-            className="px-8 md:px-24 xl:px-28 font-secondary font-light italic text-sm">
+            className="px-8 md:px-24 xl:px-22 font-secondary font-light italic text-sm">
             The projects showcased in this section are academic and personal undertakings. 
           </motion.p>
         </div>

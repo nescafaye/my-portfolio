@@ -32,7 +32,7 @@ const About = ({ summary, link, desc, socials }) => {
             {desc}
         </motion.p>
 
-        <div className="flex gap-x-4">
+        {/* <div className="flex gap-x-4">
           {
             socials.map((social, index)=> {
               return (
@@ -43,7 +43,7 @@ const About = ({ summary, link, desc, socials }) => {
               )
             })
           }
-        </div>
+        </div> */}
 
       </div>
 
