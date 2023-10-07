@@ -2,7 +2,7 @@ export const data = {
     name: "Faye Talay",
     intro: "Hi! I'm Faye. I'm into the art of Web Development, UI/UX, and Graphic Design. Exploring the world of digital design with a growing passion for blending aesthetics and functionality.",
     quote: "Web developer. Designer. Dreamer.",
-    summary: "Hello! My name is Faye Talay, a driven developer and designer based in the Philippines.",
+    summary: "Hello! My name is Faye Talay, a developer and designer based in the Philippines.",
     desc: "With a degree in Information Technology, my expertise encompasses not only web development but also the spectrum of creative design. I'm dedicated to crafting visually appealing web experiences that seamlessly blend aesthetics with functionality. My favorite design trends of 2023 are retro sticker bombs. utilitarian, and neu-brutalism. Embracing new ideas and a continuous willingness to learn are at the core of my approach. I appreciate the ever-evolving nature of the industry and always strive to stay ahead of the curve.",
     link: "talayfaye@gmail.com",
     socials: [
@@ -28,18 +28,6 @@ export const data = {
             skillName: "Web Development",
             stack: [
                 {
-                    stackName: "HTML",
-                    level:"advanced"
-                },
-                {
-                    stackName: "CSS",
-                    level:"advanced"
-                },
-                {
-                    stackName: "Javascript",
-                    level:"intermediate"
-                },
-                {
                     stackName: "React",
                     level:"beginner"
                 },
@@ -50,6 +38,10 @@ export const data = {
                 {
                     stackName: "Vue",
                     level:"beginner"
+                },
+                {
+                    stackName: "Javascript",
+                    level:"intermediate"
                 },
                 {
                     stackName: "Laravel",
@@ -63,18 +55,26 @@ export const data = {
                     stackName: "Bootstrap",
                     level:"intermediate"
                 },
+                {
+                    stackName: "HTML",
+                    level:"advanced"
+                },
+                {
+                    stackName: "CSS",
+                    level:"advanced"
+                },
             ]
         },
         {
             skillName: "UI/UX Design",
             stack: [
                 {
-                    stackName: "Figma",
-                    level:"intermediate"
-                },
-                {
                     stackName: "Adobe XD",
                     level:"beginner"
+                },
+                {
+                    stackName: "Figma",
+                    level:"intermediate"
                 },
                 {
                     stackName: "Framer",
@@ -86,12 +86,12 @@ export const data = {
             skillName: "Graphic Design",
             stack: [
                 {
-                    stackName: "Photoshop",
-                    level:"intermediate"
-                },
-                {
                     stackName: "Illustrator",
                     level:"beginner"
+                },
+                {
+                    stackName: "Photoshop",
+                    level:"intermediate"
                 },
                 {
                     stackName: "Figma",
@@ -103,17 +103,13 @@ export const data = {
             skillName: "Software Development",
             stack: [
                 {
-                    stackName: "C#",
-                    level:"intermediate"
-                },
-                {
                     stackName: "Java",
                     level:"beginner"
                 },
                 {
-                    stackName: ".Net",
+                    stackName: "C#",
                     level:"intermediate"
-                }
+                },   
             ]
         }, 
         {
@@ -141,16 +137,16 @@ export const data = {
             projectLink: "#",
             projectAlt: "Web-based van reservation system UI mockup, displayed in a collage style at a 45-degree angle."
         },
-        {
-            projectName: "Gawi",
-            projectDesc: "Gawi is a versatile tool for productivity and focus, featuring a Pomodoro timer to enhance work intervals, a to-do checklist for task management, and ambient music to support concentration.",
-            projectTags: [
-                "React", "Tailwind", "Typescript" 
-            ],
-            projectImage: "https://storage.googleapis.com/portfolio_photos/VanGo-Mockup.webp",
-            projectLink: "#",
-            projectAlt: ""
-        },
+        // {
+        //     projectName: "Gawi",
+        //     projectDesc: "Gawi is a versatile tool for productivity and focus, featuring a Pomodoro timer to enhance work intervals, a to-do checklist for task management, and ambient music to support concentration.",
+        //     projectTags: [
+        //         "React", "Tailwind", "Typescript" 
+        //     ],
+        //     projectImage: "https://storage.googleapis.com/portfolio_photos/VanGo-Mockup.webp",
+        //     projectLink: "#",
+        //     projectAlt: ""
+        // },
         {
             projectName: "Unsplash!",
             projectDesc: "Unsplash! is a replica of Unsplash, offering a dynamic masonry image gallery powered by the Unsplash API. It includes a real-time image search engine, seamlessly fetching its data from Unsplash.",

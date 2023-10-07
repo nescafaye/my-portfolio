@@ -1,7 +1,7 @@
 import React from 'react'
 import { Icon as Iconify} from "@iconify/react";
 
-const Icon = ({ name }) => {
+const Icon = ({ name, size }) => {
 
     const iconList = {
         Linkedin: "uit:linkedin-alt",
@@ -14,7 +14,7 @@ const Icon = ({ name }) => {
 
     return (
         <div>
-            <Iconify icon={iconName} width="22" className="mx-auto" />
+            <Iconify icon={iconName} width={size} className="mx-auto" />
         </div>
     )
 }

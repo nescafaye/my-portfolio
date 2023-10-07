@@ -34,7 +34,7 @@ const Home = () => {
 
         <Hero intro={data.intro} quote={data.quote} />
 
-        <Marquee baseVelocity={5} text="About" size="small" isDarkMode={isDarkMode} />
+        <Marquee baseVelocity={5} text="About" size="large" isDarkMode={isDarkMode} />
 
         <About summary={data.summary} link={data.link} desc={data.desc} socials={data.socials}/>
         <Skills skills={data.skills}/>

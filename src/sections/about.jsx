@@ -38,7 +38,7 @@ const About = ({ summary, link, desc, socials }) => {
               return (
                 <Button 
                 type="icon" style="outlined" shape="rounded" link={social.socialUrl} key={index}>
-                  <Icon name={social.socialName}/>
+                  <Icon name={social.socialName} size={20}/>
                 </Button>
               )
             })

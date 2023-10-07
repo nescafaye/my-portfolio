@@ -28,7 +28,7 @@ const Works = ({ projects }) => {
             variants={fadeIn}
             viewport={{ once: true }} 
             className="px-8 md:px-24 xl:px-28 font-secondary text-sm">
-            The projects showcased in this section are personal undertakings created to both test and enhance my skills as a developer. 
+            The projects showcased in this section are academic and personal undertakings. 
           </motion.p>
         </div>
 
