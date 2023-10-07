@@ -32,7 +32,7 @@ const Home = () => {
         <Menu/>
         <Cursor />
 
-        <Hero intro={data.intro} quote={data.quote} />
+        <Hero isDarkMode={isDarkMode} intro={data.intro}/>
 
         <Marquee baseVelocity={5} text="About" size="large" isDarkMode={isDarkMode} />
 

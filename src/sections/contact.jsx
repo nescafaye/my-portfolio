@@ -51,7 +51,7 @@ const Contact = ({ socials }) => {
         whileInView="to"
         variants={fadeInUp}
         viewport={{ once: true }}
-        className='h-96 flex items-center uppercase font-primary font-bold text-[100px] md:text-[150px] lg:text-[200px] leading-none dark:text-transparent neon-stroke text-glow'>
+        className='h-96 flex items-center uppercase font-primary text-[100px] md:text-[150px] lg:text-[200px] leading-none'>
             Say hello
         </motion.h1>
 
@@ -62,7 +62,7 @@ const Contact = ({ socials }) => {
                 whileInView="show"
                 variants={container}
                 viewport={{ once: true }}
-                className='font-secondary text-3xl lg:text-6xl space-y-2 pb-8 lg:pb-0 border-b lg:border-none border-black dark:border-light'>
+                className='font-secondary font-light italic text-3xl lg:text-6xl space-y-2 pb-8 lg:pb-0 border-b lg:border-none border-black dark:border-light'>
                 <motion.li variants={item}><Link href={'#home'}>Home</Link></motion.li>
                 <motion.li variants={item}><Link href={'#about'}>About</Link></motion.li>
                 <motion.li variants={item}><Link href={'#work'}>Work</Link></motion.li>
@@ -75,7 +75,7 @@ const Contact = ({ socials }) => {
               whileInView="show"
               variants={container}
               viewport={{ once: true }} 
-              className='font-secondary text-3xl lg:text-6xl space-y-2 pb-8 lg:pb-0 border-b lg:border-none border-black dark:border-light'>
+              className='font-secondary font-light italic text-3xl lg:text-6xl space-y-2 pb-8 lg:pb-0 border-b lg:border-none border-black dark:border-light'>
                   {socials.map((social, index) => {
                     return (
                       <motion.li key={index} variants={item}>

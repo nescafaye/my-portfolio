@@ -8,11 +8,11 @@ export default {
   theme: {
     extend: { 
       fontFamily: {
-        primary: ['Space Mono', 'serif'],
-        secondary: ['Urbanist', 'sans-serif']
+        primary: ['Urbanist', 'sans-serif'],
+        secondary: ['Lato', 'sans-serif']
       },
       colors: {
-        light: "#F7F4F2",
+        light: "#EEEFE5",
         dark: "#131315",
         "dark-2": "#333333",
         "neon-pink": "#F800C1",

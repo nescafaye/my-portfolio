@@ -41,7 +41,7 @@ const Skills = ({ skills }) => {
                       whileInView={{ y: 0, opacity: 1 }}
                       transition={{duration: 0.8}}
                       viewport={{ once: true }}
-                      className="font-primary text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-bold uppercase leading-none break-words dark:text-transparent neon-stroke text-glow">
+                      className="font-primary text-4xl sm:text-5xl md:text-7xl lg:text-9xl leading-none break-words">
                         {skill.skillName}
                     </motion.div>
                     

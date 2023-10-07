@@ -26,17 +26,9 @@ body {
   color: var(--light);
 }
 
-.dark .neon-stroke {
-  -webkit-text-stroke: 1.5px var(--neon-pink); /* Text stroke with neon color */
+.dark .stroke {
+  -webkit-text-stroke: 1px var(--light); /* Text stroke with neon color */
 }
-
-/* .dark .text-glow {
-  animation: flicker 0.5s infinite alternate;
-  text-shadow:
-      0 0 0px var(--neon-pink),
-      0 0 6px var(--dark),
-      0 0 4px var(--neon-pink);
-} */
 
 /*========== Custom Cursor ==========*/
 

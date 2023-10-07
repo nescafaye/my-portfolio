@@ -36,21 +36,21 @@ const Navbar = ({ isDarkMode, toggleDarkMode }) => {
     // <div className='h-screen'>
         <nav className={`flex w-full justify-between items-center px-6 md:px-8 sticky z-50 transition-transform duration-300 ease-in-out transform ${scrollingUp ? 'translate-y-0 top-6' : '-translate-y-full -top-1'}`}>
 
-            <div className='font-primary text-3xl md:text-4xl font-bold tracking-[-3px]'>f;</div>   
+            <div className='font-primary text-3xl md:text-4xl font-bold'>f;</div>   
 
-            <div className='flex items-center space-x-2 lg:space-x-4'>
+            <div className='flex items-center space-x-2 lg:space-x-8'>
                 
-                <Button type={isMobile ? 'icon' : 'text'} style="outlined" shape="rounded">
+                <Button>
                   {isMobile ? <Icon icon="carbon:document" width="18" className="mx-auto" /> 
                   : "Download Resume" }
                 </Button>
 
-                <Button toggle={toggleDarkMode} type="icon" style="outlined" shape="rounded">
+                <Button toggle={toggleDarkMode} blend="difference">
                   <Icon icon={isDarkMode ? "iconamoon:mode-light" : "iconamoon:mode-dark"} width="18" className="mx-auto" />
                 </Button>
 
                 <div className='block md:hidden'>
-                  <Button toggle={toggleModal} type="icon" style="outlined" shape="rounded">
+                  <Button toggle={toggleModal} type="icon" style="filled" shape="rounded">
                       <Icon icon="gg:menu-grid-o" width="18" className="mx-auto" />
                   </Button>
 

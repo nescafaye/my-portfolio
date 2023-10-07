@@ -27,7 +27,7 @@ const Works = ({ projects }) => {
             whileInView="to"
             variants={fadeIn}
             viewport={{ once: true }} 
-            className="px-8 md:px-24 xl:px-28 font-secondary text-sm">
+            className="px-8 md:px-24 xl:px-28 font-secondary font-light italic text-sm">
             The projects showcased in this section are academic and personal undertakings. 
           </motion.p>
         </div>
@@ -62,7 +62,7 @@ const Works = ({ projects }) => {
                     className="w-5/6 mx-auto space-y-6">
                   
                     <div 
-                      className="font-primary text-5xl sm:text-6xl lg:text-7xl xl:text-[80px] font-bold dark:text-transparent neon-stroke text-glow break-words">
+                      className="font-primary text-5xl sm:text-6xl lg:text-7xl xl:text-8xl break-words">
                       {project.projectName}
                     </div>
 
@@ -85,7 +85,7 @@ const Works = ({ projects }) => {
                       whileInView="to"
                       variants={fadeIn}
                       viewport={{ once: true }}  
-                      className="font-secondary text-sm lg:text-base">
+                      className="font-secondary font-light italic text-sm lg:text-base">
                       {project.projectDesc}
                     </motion.div>
 
