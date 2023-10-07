@@ -8,7 +8,7 @@ const Skills = ({ skills }) => {
 
       <div className="w-full xl:w-1/4 h-fit font-secondary lg:sticky xl:top-24 space-y-4">
         <h4 className="lg:text-xl font-semibold uppercase">
-            Skills and Services
+            What I Do
         </h4>
         <div className="text-sm flex flex-row xl:flex-col gap-2">
           <div className="flex flex-nowrap items-center gap-2">

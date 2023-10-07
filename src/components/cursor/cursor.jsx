@@ -30,7 +30,7 @@ const Cursor = () => {
     };
   }, []);
 
-  const cursorSize = 22; // Set the cursor size here
+  const cursorSize = 42; // Set the cursor size here
   const cursorHalfSize = cursorSize / 2;
 
   // Check if it's a mobile device based on screen width
