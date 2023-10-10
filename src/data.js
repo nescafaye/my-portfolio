@@ -118,10 +118,6 @@ export const data = {
                 {
                     stackName: "Wordpress",
                     level:"beginner"
-                },
-                {
-                    stackName: "Webflow",
-                    level:"beginner"
                 }
             ]
         }
