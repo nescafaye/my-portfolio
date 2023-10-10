@@ -41,17 +41,17 @@ const Navbar = ({ isDarkMode, toggleDarkMode }) => {
             <div className='flex items-center space-x-2 lg:space-x-8'>
                 
                 <Button>
-                  {isMobile ? <Icon icon="carbon:document" width="18" className="mx-auto" /> 
+                  {isMobile ? <Icon icon="carbon:document" width="22" className="mx-auto" /> 
                   : "Download Resume" }
                 </Button>
 
                 <Button toggle={toggleDarkMode} blend="difference">
-                  <Icon icon={isDarkMode ? "iconamoon:mode-light" : "iconamoon:mode-dark"} width="18" className="mx-auto" />
+                  <Icon icon={isDarkMode ? "iconamoon:mode-light" : "iconamoon:mode-dark"} width="22" className="mx-auto" />
                 </Button>
 
                 <div className='hidden'>
                   <Button toggle={toggleModal} type="icon" style="filled" shape="rounded">
-                      <Icon icon="gg:menu-grid-o" width="18" className="mx-auto" />
+                      <Icon icon="gg:menu-grid-o" width="22" className="mx-auto" />
                   </Button>
 
                   {/* <Modal isOpen={isModalOpen}>
