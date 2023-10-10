@@ -6,15 +6,16 @@ import Icon from "../components/icon/icon";
 const About = ({ summary, link, desc, socials }) => {
   
   return (
-    <section id="about" className="h-full flex flex-col xl:flex-row justify-between items-stretch gap-8 px-8 md:px-24 py-16 lg:py-32">
+    <section id="about" className="h-full flex flex-col xl:flex-row justify-between items-stretch gap-8 px-8 md:px-24 py-16 lg:py-32" data-scroll-section> 
 
-      <div className="w-full lg:w-1/4 h-fit lg:sticky xl:top-24">
+      <div className="w-full lg:w-1/4 h-fit lg:sticky xl:top-2" data-scroll data-scroll-speed="-2" data-scroll-direction="vertical">
         <Button type="text" style="filled" shape="rounded" link={`mailto:${link}`}>Contact Me</Button>
       </div>
 
       <div className="w-full lg:w-3/4 space-y-8 xl:space-y-10">
 
         <motion.h3 
+          data-scroll data-scroll-speed="2"
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{duration: 1}}
@@ -23,7 +24,8 @@ const About = ({ summary, link, desc, socials }) => {
             {summary}
         </motion.h3>
         
-        <motion.p 
+        <motion.p
+          data-scroll data-scroll-speed="3" 
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{duration: 1.2, delay: 0.1 }}

@@ -19,7 +19,7 @@ const Works = ({ projects }) => {
 
   return (
     <>
-      <section id="work" className="flex flex-col lg:flex-row justify-end gap-0 lg:gap-12">
+      <section id="work" className="flex flex-col lg:flex-row justify-end gap-0 lg:gap-12" data-scroll-section>
 
         <div className="w-full lg:w-1/4 py-8 md:py-16">
           <motion.p

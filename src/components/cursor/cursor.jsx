@@ -2,31 +2,33 @@ import React, { useState, useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
 
 const Cursor = () => {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isHidden, setIsHidden] = useState(false);
 
-  // Update cursor position
+  // Update cursor position based on mouse movement
+  const handleMouseMove = (e) => {
+    setMousePosition({ x: e.clientX, y: e.clientY });
+  };
+
+  // Hide the cursor when leaving the document
+  const handleMouseLeave = () => {
+    setIsHidden(true);
+  };
+
+  // Show the cursor when entering the document
+  const handleMouseEnter = () => {
+    setIsHidden(false);
+  };
+
   useEffect(() => {
-    const updatePosition = (e) => {
-      setPosition({ x: e.clientX, y: e.clientY });
-    };
-    window.addEventListener('mousemove', updatePosition);
-
-    const hideCursor = () => {
-      setIsHidden(true);
-    };
-
-    const showCursor = () => {
-      setIsHidden(false);
-    };
-
-    document.addEventListener('mouseleave', hideCursor);
-    document.addEventListener('mouseenter', showCursor);
+    window.addEventListener('mousemove', handleMouseMove);
+    document.addEventListener('mouseleave', handleMouseLeave);
+    document.addEventListener('mouseenter', handleMouseEnter);
 
     return () => {
-      window.removeEventListener('mousemove', updatePosition);
-      document.removeEventListener('mouseleave', hideCursor);
-      document.removeEventListener('mouseenter', showCursor);
+      window.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener('mouseleave', handleMouseLeave);
+      document.removeEventListener('mouseenter', handleMouseEnter);
     };
   }, []);
 
@@ -40,8 +42,8 @@ const Cursor = () => {
     <div
       className={`cursor ${isHidden || isMobile ? 'hidden' : ''}`}
       style={{
-        left: `${position.x - cursorHalfSize}px`,
-        top: `${position.y - cursorHalfSize}px`,
+        left: `${mousePosition.x - cursorHalfSize}px`,
+        top: `${mousePosition.y - cursorHalfSize}px`,
         width: `${cursorSize}px`,
         height: `${cursorSize}px`,
       }}

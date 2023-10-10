@@ -1,4 +1,5 @@
-import React, { Suspense } from "react";
+import React, { useEffect, useRef } from "react";
+import LocomotiveScroll from 'locomotive-scroll';
 
 import Menu from "../components/navigation/menu";
 import Navbar from "../components/navigation/navbar";
@@ -18,15 +19,24 @@ import { data } from "../data"
 
 const Home = () => {
 
+  const scrollContainerRef = useRef(null);
+
+  useEffect(() => {
+    const scroll = new LocomotiveScroll({
+      el: scrollContainerRef.current,
+      smooth: true,
+    });
+
+    // Clean up the scroll instance when the component unmounts
+    return () => {
+      scroll.destroy();
+    };
+  }, []);
+
   const { isDarkMode, toggleDarkMode } = useDarkMode();
 
   return (
-    <div className="dark:bg-dark dark:text-light bg-light text-dark-2">
-
-      <Suspense fallback={
-        <div className="w-full h-screen flex justify-center items-center font-primary text-xl lg:text-3xl">
-          Loading...
-        </div>}>
+    <div className="dark:bg-dark dark:text-light bg-light text-dark-2" ref={scrollContainerRef} data-scroll-container>
 
         <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode}/>
         <Menu/>
@@ -34,18 +44,16 @@ const Home = () => {
 
         <Hero isDarkMode={isDarkMode} intro={data.intro}/>
 
-        <Marquee baseVelocity={5} text="About" size="large" isDarkMode={isDarkMode} />
+        <Marquee baseVelocity={5} text="About" size="large" isDarkMode={isDarkMode}/>
 
         <About summary={data.summary} link={data.link} desc={data.desc} socials={data.socials}/>
         <Skills skills={data.skills}/>
 
-        <Marquee baseVelocity={6} text="Works" size="large" isDarkMode={isDarkMode}>Works</Marquee>
+        <Marquee baseVelocity={6} text="Works" size="large" isDarkMode={isDarkMode} data-scroll-section>Works</Marquee>
 
         <Works projects={data.projects}/>
         {/* <Other otherProjects={data.otherProjects}/> */}
         <Contact socials={data.socials}/>
-        
-      </Suspense>
 
     </div>
   );

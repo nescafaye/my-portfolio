@@ -90,8 +90,9 @@ const Marquee = ({ text, size, isDarkMode, children, baseVelocity = 100 }) => {
     TextSize[size];
 
   return (
-    <div className="w-full z-0 py-4 lg:py-5 mt-20 overflow-hidden relative border-y border-dark dark:border-neon-pink dark:text-neon-pink">
-      <motion.div className={classNames} style={{ x }}>
+    <div className="w-full z-0 py-4 lg:py-5 mt-20 overflow-hidden relative border-y border-dark dark:border-neon-pink dark:text-neon-pink" data-scroll-section>
+      <motion.div
+        className={classNames} style={{ x }}>
         {items} {items}  
       </motion.div>
     </div>

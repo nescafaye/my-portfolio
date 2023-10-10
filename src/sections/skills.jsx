@@ -4,7 +4,7 @@ import Chip from "../components/chip/chip";
 
 const Skills = ({ skills }) => {
   return (
-    <section className="h-full flex flex-col xl:flex-row gap-8 px-8 md:px-24 py-16 xl:py-32">
+    <section id="skills" className="h-full flex flex-col xl:flex-row gap-8 px-8 md:px-24 py-16 xl:py-32" data-scroll-section>
 
       <div className="w-full xl:w-1/4 h-fit font-secondary lg:sticky xl:top-24 space-y-4">
         <h4 className="lg:text-xl font-semibold uppercase">
