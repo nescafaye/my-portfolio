@@ -78,9 +78,11 @@ const Contact = ({ socials }) => {
               className='font-primary text-3xl lg:text-6xl space-y-2 pb-8 lg:pb-0 border-b lg:border-none border-black dark:border-light'>
                   {socials.map((social, index) => {
                     return (
-                      <motion.li key={index} variants={item}>
-                        <Link href={social.socialUrl} target={'_blank'} rel={'noopener noreferrer'}>{social.socialName}</Link>
-                      </motion.li>
+                      <>
+                        <motion.li key={index} variants={item}>
+                          <Link href={social.socialUrl} target={'_blank'} rel={'noopener noreferrer'}>{social.socialName}</Link>
+                        </motion.li>
+                      </>
                     )
                   })}
               </motion.ul>

@@ -52,7 +52,7 @@ const Cursor = () => {
     width: `${cursorSize}px`,
     height: `${cursorSize}px`,
     transform: isHovered ? 'scale(6)' : 'scale(1)',
-    transition: 'transform 0.5s ease',
+    transition: 'transform 0.4s',
   }
 
   return (

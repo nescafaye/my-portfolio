@@ -34,15 +34,15 @@ const Navbar = () => {
 
             <div className='font-primary text-3xl md:text-4xl font-bold'>f;</div>   
 
-            <div className='flex items-center space-x-2 lg:space-x-8'>
+            <div className='flex flex-row items-center space-x-2 lg:space-x-8'>
                 
                 <Button>
-                  {isMobile ? <Icon icon="carbon:document" width="22" /> 
+                  {isMobile ? <Icon icon="carbon:document" width="20" /> 
                   : "Download Resume" }
                 </Button>
 
                 <Button toggle={toggleDarkMode}>
-                  <Icon icon={isDarkMode ? "iconamoon:mode-light" : "iconamoon:mode-dark"} width="22" />
+                  <Icon icon={isDarkMode ? "iconamoon:mode-light" : "iconamoon:mode-dark"} width="20" />
                 </Button>
 
             </div>
