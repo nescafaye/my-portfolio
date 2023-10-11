@@ -1,7 +1,10 @@
+import VanGo from './assets/images/VanGo-Mockup.webp'
+import Unsplash from './assets/images/Unsplash-Mockup.webp'
+import Recipes from './assets/images/Recipes-Mockup.webp'
+
 export const data = {
     name: "Faye Talay",
     intro: "Hi! I'm Faye. I'm into the art of Web Development, UI/UX, and Graphic Design. Exploring the world of digital design with a growing passion for blending aesthetics and functionality.",
-    quote: "Web developer. Designer. Dreamer.",
     summary: "Hello! My name is Faye Talay, a developer and designer based in the Philippines.",
     desc: "With a degree in Information Technology, my expertise encompasses not only web development but also the spectrum of creative design. I'm dedicated to crafting visually appealing web experiences that seamlessly blend aesthetics with functionality. My favorite design trends of 2023 are retro sticker bombs. utilitarian, and neu-brutalism. Embracing new ideas and a continuous willingness to learn are at the core of my approach. I appreciate the ever-evolving nature of the industry and always strive to stay ahead of the curve.",
     link: "talayfaye@gmail.com",
@@ -129,8 +132,8 @@ export const data = {
             projectTags: [
                 "Laravel", "Javascript", "SASS", "Livewire", "MySQL"
             ],
-            projectImage: "https://storage.googleapis.com/portfolio_photos/VanGo-Mockup.webp",
-            projectLink: "#",
+            projectImage: `${VanGo}`,
+            projectLink: "https://github.com/nescafaye/ovrs_commuter",
             projectAlt: "Web-based van reservation system UI mockup, displayed in a collage style at a 45-degree angle."
         },
         // {
@@ -149,7 +152,7 @@ export const data = {
             projectTags: [
                 "React", "Tailwind", "Axios", "Unsplash API" 
             ],
-            projectImage: "https://storage.googleapis.com/portfolio_photos/Unsplash-Mockup.webp",
+            projectImage: `${Unsplash}`,
             projectLink: "https://unsplash-api-five.vercel.app",
             projectAlt: "Mockup of Unsplash image search engine replica with prominent floating search bar and card components."
         },
@@ -159,8 +162,8 @@ export const data = {
             projectTags: [
                 "React", "MongoDB", "Express.js", "Node.js", "Tailwind" 
             ],
-            projectImage: "https://storage.googleapis.com/portfolio_photos/Recipes-Mockup.webp",
-            projectLink: "#",
+            projectImage: `${Recipes}`,
+            projectLink: "https://github.com/nescafaye/crud-front-end",
             projectAlt: "Mockup of a Filipino dessert/delicacies recipe CRUD app in dark mode built with MERN stack."
         },
     ],
