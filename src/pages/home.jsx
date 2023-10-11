@@ -12,34 +12,30 @@ const Other = React.lazy(() => import('../sections/other'));
 const Contact = React.lazy(() => import('../sections/contact'));
 const Marquee = React.lazy(() => import('../components/marquee/marquee'));
 
-import useDarkMode from "../theme";
-
 import { data } from "../data"
 
 const Home = () => {
 
-  const { isDarkMode, toggleDarkMode } = useDarkMode();
-
   return (
-    <div className="dark:bg-dark dark:text-light bg-light text-dark-2">
+    <div className="mx-auto min-h-screen max-w-screen-2xl dark:bg-dark dark:text-light bg-light text-dark-2">
 
       <Suspense fallback={
         <div className="w-full h-screen flex justify-center items-center font-primary text-xl lg:text-3xl">
           Loading...
         </div>}>
 
-        <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode}/>
-        <Menu/>
         <Cursor />
+        <Navbar/>
+        <Menu/>
 
-        <Hero isDarkMode={isDarkMode} intro={data.intro}/>
+        <Hero intro={data.intro}/>
 
-        <Marquee baseVelocity={5} text="About" size="large" isDarkMode={isDarkMode} />
+        <Marquee baseVelocity={5} text="About" size="large" />
 
         <About summary={data.summary} link={data.link} desc={data.desc} socials={data.socials}/>
         <Skills skills={data.skills}/>
 
-        <Marquee baseVelocity={6} text="Works" size="large" isDarkMode={isDarkMode}>Works</Marquee>
+        <Marquee baseVelocity={6} text="Works" size="large">Works</Marquee>
 
         <Works projects={data.projects}/>
         {/* <Other otherProjects={data.otherProjects}/> */}

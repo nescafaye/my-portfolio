@@ -1,5 +1,7 @@
 import React from 'react'
 import './App.css'
+import { ThemeProvider } from './context/themeContext';
+import { HoverProvider } from './context/hoverContext';
 
 import Home from './pages/home'
 
@@ -8,7 +10,11 @@ function App() {
 
   return (
     <>
-      <Home/>
+    <ThemeProvider>
+      <HoverProvider>
+        <Home/>
+      </HoverProvider>
+    </ThemeProvider>
     </>
   )
 }

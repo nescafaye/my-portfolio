@@ -1,6 +1,12 @@
-import { useState, useEffect } from 'react';
+import React, { createContext, useState, useEffect, useContext } from 'react';
 
-export default function useDarkMode() {
+const ThemeContext = createContext();
+
+export const useTheme = () => {
+  return useContext(ThemeContext);
+};
+
+export const ThemeProvider = ({ children }) => {
 
   const [isDarkMode, setIsDarkMode] = useState(
     localStorage.getItem('darkMode') === 'true'
@@ -11,7 +17,7 @@ export default function useDarkMode() {
     setIsDarkMode(newIsDarkMode);
     localStorage.setItem('darkMode', newIsDarkMode.toString());
   };
-  
+
   useEffect(() => {
     if (isDarkMode) {
       document.documentElement.classList.add('dark');
@@ -20,6 +26,9 @@ export default function useDarkMode() {
     }
   }, [isDarkMode]);
 
-  return { isDarkMode, toggleDarkMode };
-   
-}
+  return (
+    <ThemeContext.Provider value={{ isDarkMode, toggleDarkMode }}>
+      {children}
+    </ThemeContext.Provider>
+  );
+};

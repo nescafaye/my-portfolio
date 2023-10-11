@@ -6,10 +6,12 @@ import darkStar from "../assets/shape/dark_star.svg"
 import pinkArrow from "../assets/shape/arrow.svg"
 import pinkSparkle from "../assets/shape/sparkle.svg"
 import pinkStar from "../assets/shape/star.svg"
+import { useTheme } from '../context/themeContext';
 
-const Hero = ({intro, isDarkMode }) => {
+const Hero = ({intro}) => {
+
+  const { isDarkMode } = useTheme();
   
-
   const currentDate = new Date();
   const currentYear = currentDate.getFullYear();
 

@@ -13,8 +13,11 @@ import { wrap } from "@motionone/utils";
 import sparkle from "../../assets/shape/sparkle.svg";
 import darkSparkle from "../../assets/shape/dark_sparkle.svg"
 
+import { useTheme } from '../../context/themeContext';
 
-const Marquee = ({ text, size, isDarkMode, children, baseVelocity = 100 }) => {
+const Marquee = ({ text, size, children, baseVelocity = 100 }) => {
+
+  const { isDarkMode } = useTheme();
 
   const baseX = useMotionValue(0);
   const { scrollY } = useScroll();

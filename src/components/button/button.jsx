@@ -1,6 +1,9 @@
 import React from "react";
+import { useHover } from '../../context/hoverContext';
 
 const Button = ({ style, shape, type, toggle, link, children, ...props }) => {
+
+  const { handleMouseEnter, handleMouseLeave } = useHover();
   
   const ButtonStyle = {
     filled: "bg-dark-2 text-light dark:bg-neon-pink",
@@ -21,20 +24,15 @@ const Button = ({ style, shape, type, toggle, link, children, ...props }) => {
   const classNames = ButtonStyle[style] + " " + ButtonShape[shape] + " " + ButtonType[type] + " " + "uppercase";
 
   return (
-  <>
-    { link ? ( 
-      <a href={link} target="_blank">
-        <button type="button" onClick={toggle} className={classNames} {...props}>
-          {children}
-        </button>
-      </a> ) : (
 
-      <button type="button" onClick={toggle} className={classNames}>
+    <a href={link ? link : undefined} target={link ? '_blank' : undefined}
+      onMouseEnter={handleMouseEnter} 
+      onMouseLeave={handleMouseLeave}>
+      <button type="button" onClick={toggle} className={classNames} {...props}>
         {children}
       </button>
-    )}
-
-  </>
+    </a>
+    
   );
 };
 

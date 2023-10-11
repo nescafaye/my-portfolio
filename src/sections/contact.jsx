@@ -95,7 +95,7 @@ const Contact = ({ socials }) => {
           className="hidden lg:block w-full h-[0.5px] bg-black dark:bg-light">
         </motion.div>
 
-        <div className='flex flex-row justify-between opacity-50'>
+        <div className='flex flex-row justify-between opacity-40 italic'>
           
           <div className='font-secondary text-sm'>
             &copy; 2023

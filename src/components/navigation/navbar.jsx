@@ -2,17 +2,13 @@ import React, { useState, useEffect } from 'react'
 import Button from '../button/button'
 import { Icon } from "@iconify/react";
 import { useMediaQuery } from 'react-responsive';
-// import useDarkMode from '../../theme';
+import { useTheme } from '../../context/themeContext';
 
-const Navbar = ({ isDarkMode, toggleDarkMode }) => {
+const Navbar = () => {
+
+  const { isDarkMode, toggleDarkMode } = useTheme();
 
   const isMobile = useMediaQuery({ maxWidth: 768 });
-
-  const [isModalOpen, setModalOpen] = useState(false);
-
-  const toggleModal = () => {
-    setModalOpen(!isModalOpen); // Toggle the modal's state
-  };
 
   const [scrollingUp, setScrollingUp] = useState(true);
 
@@ -41,23 +37,13 @@ const Navbar = ({ isDarkMode, toggleDarkMode }) => {
             <div className='flex items-center space-x-2 lg:space-x-8'>
                 
                 <Button>
-                  {isMobile ? <Icon icon="carbon:document" width="22" className="mx-auto" /> 
+                  {isMobile ? <Icon icon="carbon:document" width="22" /> 
                   : "Download Resume" }
                 </Button>
 
-                <Button toggle={toggleDarkMode} blend="difference">
-                  <Icon icon={isDarkMode ? "iconamoon:mode-light" : "iconamoon:mode-dark"} width="22" className="mx-auto" />
+                <Button toggle={toggleDarkMode}>
+                  <Icon icon={isDarkMode ? "iconamoon:mode-light" : "iconamoon:mode-dark"} width="22" />
                 </Button>
-
-                <div className='hidden'>
-                  <Button toggle={toggleModal} type="icon" style="filled" shape="rounded">
-                      <Icon icon="gg:menu-grid-o" width="22" className="mx-auto" />
-                  </Button>
-
-                  {/* <Modal isOpen={isModalOpen}>
-                    <Hamburger/>
-                  </Modal> */}
-                </div>
 
             </div>
         </nav>

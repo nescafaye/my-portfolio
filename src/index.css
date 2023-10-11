@@ -34,7 +34,7 @@ body {
 
 .cursor {
   background-color: var(--light); /* Background color of the cursor */
-  mix-blend-mode: difference;
+  mix-blend-mode: exclusion;
   border-radius: 50%;
   position: fixed;
   pointer-events: none;
