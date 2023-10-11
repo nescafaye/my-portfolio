@@ -35,7 +35,7 @@ body {
 .cursor {
   background-color: var(--light); /* Background color of the cursor */
   mix-blend-mode: exclusion;
-  border-radius: 50%;
+  border-radius: 100%;
   position: fixed;
   pointer-events: none;
   z-index: 9999;

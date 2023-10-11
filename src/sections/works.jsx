@@ -1,8 +1,11 @@
 import React from "react";
-import { easeInOut, motion, useScroll } from "framer-motion"
+import { motion } from "framer-motion"
 import Chip from "../components/chip/chip";
+import { useHover } from '../context/hoverContext';
 
 const Works = ({ projects }) => {
+
+  const { handleMouseEnter, handleMouseLeave } = useHover();
 
   const fadeIn = {
     from: { 
@@ -41,7 +44,12 @@ const Works = ({ projects }) => {
               <div key={index} className={`h-full lg:h-[80vh] flex flex-col ${index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"}`}>
                 
                 <div className="w-full lg:w-1/2 flex-1 flex justify-center items-center border-[0.1px] border-dark dark:border-neon-pink relative">
-                  <a href={project.projectLink} target="_blank" rel="noopener noreferrer" className="w-full h-full overflow-clip relative">
+                  <a href={project.projectLink} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="w-full h-full overflow-clip relative"
+                  onMouseEnter={handleMouseEnter} 
+                  onMouseLeave={handleMouseLeave}>
                     <img
                       src={project.projectImage}
                       alt={project.projectAlt}

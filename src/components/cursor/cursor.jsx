@@ -32,7 +32,7 @@ const Cursor = () => {
     };
   }, []);
 
-  const cursorSize = 30; // Set the cursor size here
+  const cursorSize = 22; // Set the cursor size here
   const cursorHalfSize = cursorSize / 2;
 
   // Check if it's a mobile device based on screen width
@@ -41,7 +41,7 @@ const Cursor = () => {
   const bgGradient = {
     position: 'fixed',
     inset: 0,
-    background: `radial-gradient(600px at ${position.x}px ${position.y}px, rgba(248, 0, 193, 0.1), transparent 80%)`,
+    background: `radial-gradient(600px at ${position.x}px ${position.y}px, rgba(248, 0, 193, 0.05), transparent 80%)`,
     pointerEvents: 'none',
     mixBlendMode: 'screen'
   };
@@ -51,7 +51,7 @@ const Cursor = () => {
     top: `${position.y - cursorHalfSize}px`,
     width: `${cursorSize}px`,
     height: `${cursorSize}px`,
-    transform: isHovered ? 'scale(4)' : 'scale(1)',
+    transform: isHovered ? 'scale(6)' : 'scale(1)',
     transition: 'transform 0.5s ease',
   }
 
