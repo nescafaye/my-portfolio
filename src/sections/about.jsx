@@ -8,18 +8,18 @@ const About = ({ summary, link, desc, socials }) => {
   return (
     <section id="about" className="h-full flex flex-col xl:flex-row justify-between items-stretch gap-8 px-8 md:px-24 py-16 lg:py-32">
 
-      <div className="w-full lg:w-1/4 h-fit lg:sticky xl:top-24">
+      <div className="w-full xl:w-1/4 h-fit lg:sticky xl:top-24">
         <Button type="text" style="filled" shape="rounded" link={`mailto:${link}`}>Contact Me</Button>
       </div>
 
-      <div className="w-full lg:w-3/4 space-y-8 xl:space-y-10">
+      <div className="w-full xl:w-3/4 space-y-8 xl:space-y-10">
 
         <motion.h3 
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{duration: 1}}
           viewport={{ once: true }}
-          className="font-primary text-3xl md:text-5xl xl:text-9xl">
+          className="font-primary text-4xl md:text-7xl xl:text-9xl">
             {summary}
         </motion.h3>
         

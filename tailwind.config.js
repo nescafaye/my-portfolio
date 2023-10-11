@@ -12,7 +12,7 @@ export default {
         secondary: ['Lato', 'sans-serif']
       },
       colors: {
-        light: "#FBFCF3",
+        light: "#FFFEF5",
         dark: "#131315",
         "dark-2": "#333333",
         "neon-pink": "#F800C1",
