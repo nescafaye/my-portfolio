@@ -36,9 +36,9 @@ const Navbar = () => {
 
             <div className='flex flex-row items-center space-x-2 lg:space-x-8'>
                 
-                <Button>
+                <Button link="https://www.behance.net/gallery/162669107/My-Portfolio-2023">
                   {isMobile ? <Icon icon="carbon:document" width="20" /> 
-                  : "Download Resume" }
+                  : "See Portfolio" }
                 </Button>
 
                 <Button toggle={toggleDarkMode}>
