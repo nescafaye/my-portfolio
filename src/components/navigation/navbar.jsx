@@ -38,7 +38,7 @@ const Navbar = () => {
                 
                 <Button link="https://www.behance.net/gallery/162669107/My-Portfolio-2023">
                   {isMobile ? <Icon icon="carbon:document" width="20" /> 
-                  : "See Portfolio" }
+                  : "View Portfolio" }
                 </Button>
 
                 <Button toggle={toggleDarkMode}>
