@@ -36,7 +36,7 @@ const Navbar = () => {
 
             <div className='flex flex-row items-center space-x-2 lg:space-x-8'>
                 
-                <Button link="https://www.behance.net/gallery/162669107/My-Portfolio-2023">
+                <Button link="https://www.figma.com/proto/80Ml477E1oorOc80XnoLzu/My-Portfolio?node-id=224-93&starting-point-node-id=224%3A93&mode=design&t=3Kl3DD0hcqniUsrl-1">
                   {isMobile ? <Icon icon="carbon:document" width="20" /> 
                   : "View Portfolio" }
                 </Button>
