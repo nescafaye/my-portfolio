@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import Button from '../button/button'
 import { Icon } from "@iconify/react";
 import { useMediaQuery } from 'react-responsive';
@@ -7,20 +7,18 @@ import { useTheme } from '../../context/themeContext';
 const Navbar = () => {
 
   const { isDarkMode, toggleDarkMode } = useTheme();
-
   const isMobile = useMediaQuery({ maxWidth: 768 });
-
   const [scrollingUp, setScrollingUp] = useState(true);
+  const prevScrollPosRef = useRef(0);
 
   useEffect(() => {
-    let prevScrollPos = window.pageYOffset;
-
+    
     const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
-      setScrollingUp(prevScrollPos > currentScrollPos);
-      prevScrollPos = currentScrollPos;
+      const currentScrollPos = window.scrollY || window.pageYOffset;
+      setScrollingUp(prevScrollPosRef.current > currentScrollPos);
+      prevScrollPosRef.current = currentScrollPos;
     };
-
+    
     window.addEventListener('scroll', handleScroll);
 
     return () => {
@@ -30,7 +28,7 @@ const Navbar = () => {
 
   return (
     // <div className='h-screen'>
-        <nav className={`flex w-full justify-between items-center px-6 md:px-8 sticky z-50 transition-transform duration-300 ease-in-out transform ${scrollingUp ? 'translate-y-0 top-6' : '-translate-y-full -top-1'}`}>
+        <nav className={`flex w-full justify-between items-center px-6 md:px-8 sticky z-50 dark:mix-blend-difference transition-transform duration-300 ease-in-out transform ${scrollingUp ? 'translate-y-0 top-6' : '-translate-y-full -top-1'}`}>
 
             <div className='font-primary text-3xl md:text-4xl font-bold'>f;</div>   
 
