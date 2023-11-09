@@ -1,7 +1,3 @@
-import VanGo from './assets/images/VanGo-Mockup.webp'
-import Unsplash from './assets/images/Unsplash-Mockup.webp'
-import Recipes from './assets/images/Recipes-Mockup.webp'
-
 export const data = {
     name: "Faye Talay",
     intro: "Hi! I'm Faye. I'm into the art of Web Development, UI/UX, and Graphic Design. Exploring the world of digital design with a growing passion for blending aesthetics and functionality.",
@@ -132,7 +128,7 @@ export const data = {
             projectTags: [
                 "Laravel", "Javascript", "SASS", "Livewire", "MySQL"
             ],
-            projectImage: `${VanGo}`,
+            projectImage: "https://cdn.jsdelivr.net/gh/nescafaye/my-portfolio@main/src/assets/images/VanGo-Mockup.webp",
             projectLink: "https://github.com/nescafaye/ovrs_commuter",
             projectAlt: "Web-based van reservation system UI mockup, displayed in a collage style at a 45-degree angle."
         },
@@ -152,7 +148,7 @@ export const data = {
             projectTags: [
                 "React", "Tailwind", "Axios", "Unsplash API" 
             ],
-            projectImage: `${Unsplash}`,
+            projectImage: "https://cdn.jsdelivr.net/gh/nescafaye/my-portfolio@main/src/assets/images/Unsplash-Mockup.webp",
             projectLink: "https://unsplash-api-five.vercel.app",
             projectAlt: "Mockup of Unsplash image search engine replica with prominent floating search bar and card components."
         },
@@ -162,7 +158,7 @@ export const data = {
             projectTags: [
                 "React", "MongoDB", "Express.js", "Node.js", "Tailwind" 
             ],
-            projectImage: `${Recipes}`,
+            projectImage: "https://cdn.jsdelivr.net/gh/nescafaye/my-portfolio@main/src/assets/images/Recipes-Mockup.webp",
             projectLink: "https://github.com/nescafaye/crud-front-end",
             projectAlt: "Mockup of a Filipino dessert/delicacies recipe CRUD app in dark mode built with MERN stack."
         },
