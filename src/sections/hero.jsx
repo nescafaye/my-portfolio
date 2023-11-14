@@ -87,7 +87,7 @@ const Hero = ({intro}) => {
               delay: 0.60
             }}>
               <img src={isDarkMode ? (pinkStar) : (darkStar)} className="w-14 h-14 sm:w-16 sm:h-16 md:w-24 md:h-24 xl:w-48 xl:h-48" alt=""/>
-              <span>Dreamer.</span>
+              <span>UI/UX.</span>
             </motion.div>
           </div>
       </div>
