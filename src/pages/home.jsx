@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import { Suspense } from "react";
 
 import Menu from "../components/navigation/menu";
 import Navbar from "../components/navigation/navbar";
@@ -8,7 +8,7 @@ const Hero = React.lazy(() => import('../sections/hero'));
 const About = React.lazy(() => import('../sections/about'));
 const Skills = React.lazy(() => import('../sections/skills'));
 const Works = React.lazy(() => import('../sections/works'));
-const Other = React.lazy(() => import('../sections/other'));
+const PassionProj = React.lazy(() => import('../sections/passionproj'));
 const Contact = React.lazy(() => import('../sections/contact'));
 const Marquee = React.lazy(() => import('../components/marquee/marquee'));
 
@@ -38,7 +38,7 @@ const Home = () => {
         <Marquee baseVelocity={6} text="Works" size="large">Works</Marquee>
 
         <Works projects={data.projects}/>
-        {/* <Other otherProjects={data.otherProjects}/> */}
+        {/* <PassionProj projects={data.passionProjects}/> */}
         <Contact socials={data.socials}/>
         
       </Suspense>

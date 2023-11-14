@@ -1,9 +1,9 @@
-import { React, useRef } from 'react';
-import { motion, useScroll } from "framer-motion"
+import { useRef } from 'react';
+import { motion } from "framer-motion"
 import Button from '../components/button/button'
 import { Icon } from "@iconify/react";
 
-const Other = ({ otherProjects }) => {
+const PassionProj = ({ projects }) => {
 
   const sliderRef = useRef(null);
 
@@ -55,7 +55,7 @@ const Other = ({ otherProjects }) => {
           <div className='w-full xl:w-1/4 px-8 md:px-0'>
 
             <h4 className="font-secondary font-semibold lg:text-xl uppercase">
-                Other Works
+                Passion Projects
             </h4>
 
           </div>
@@ -65,11 +65,11 @@ const Other = ({ otherProjects }) => {
             <div className='flex flex-row flex-nowrap gap-2 md:gap-4 lg:gap-8 overflow-x-auto' ref={sliderRef}>
 
               {
-                otherProjects.map((other, index) => {
+                projects.map((proj, index) => {
                   return (
                     <div className='h-[30rem] min-w-[26rem] overflow-clip' key={index}>
                       <a href="#" target="_blank" rel="noopener noreferrer">
-                        <img src={other.projectImage} alt={other.projectAlt}
+                        <img src={proj.projectImage} alt={proj.projectAlt}
                         className='h-full w-full object-cover hover:scale-110 transition-transform duration-500'/>
                       </a>
                     </div>
@@ -86,4 +86,4 @@ const Other = ({ otherProjects }) => {
   )
 }
 
-export default Other
+export default PassionProj

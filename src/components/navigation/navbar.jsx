@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Button from '../button/button'
 import { Icon } from "@iconify/react";
 import { useMediaQuery } from 'react-responsive';

@@ -163,7 +163,7 @@ export const data = {
             projectAlt: "Mockup of a Filipino dessert/delicacies recipe CRUD app in dark mode built with MERN stack."
         },
     ],
-    otherProjects: [
+    passionProjects: [
         {
             projectImage: "https://images.unsplash.com/photo-1617785899222-fe06b15b6dd5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1771&q=80",
             projectLink: "#",

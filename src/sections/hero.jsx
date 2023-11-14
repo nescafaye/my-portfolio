@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { motion, useScroll } from "framer-motion"
 import darkArrow from "../assets/shape/dark_arrow.svg"
 import darkSparkle from "../assets/shape/dark_sparkle.svg"
