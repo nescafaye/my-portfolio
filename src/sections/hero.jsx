@@ -78,7 +78,7 @@ const Hero = ({intro}) => {
               <img src={isDarkMode ? (pinkSparkle) : (darkSparkle)}className="w-14 h-14 sm:w-16 sm:h-16 md:w-24 md:h-24 xl:w-48 xl:h-48" alt=""/>
             </motion.div>
           </div>
-          <div className="overflow-hidden">
+          {/* <div className="overflow-hidden">
             <motion.div className="flex gap-2 lg:gap-8 justify-end items-center" variants={fadeInUp} initial="from" animate="to"
               transition={{type: "spring",
               bounce: 0,
@@ -89,7 +89,7 @@ const Hero = ({intro}) => {
               <img src={isDarkMode ? (pinkStar) : (darkStar)} className="w-14 h-14 sm:w-16 sm:h-16 md:w-24 md:h-24 xl:w-48 xl:h-48" alt=""/>
               <span>UI/UX.</span>
             </motion.div>
-          </div>
+          </div> */}
       </div>
     </section>
   );
