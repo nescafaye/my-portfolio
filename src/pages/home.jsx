@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import React, { Suspense } from "react";
 
 import Menu from "../components/navigation/menu";
 import Navbar from "../components/navigation/navbar";
