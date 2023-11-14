@@ -45,7 +45,7 @@ const PassionProj = ({ projects }) => {
         <Button toggle={scrollLeft} type="icon" style="outlined" shape="rounded">
           <Icon icon="ion:arrow-back" width="22" className="mx-auto" />
         </Button>
-        <Button toggle={scrollRight} type="icon" style="filloutlined" shape="rounded">
+        <Button toggle={scrollRight} type="icon" style="outlined" shape="rounded">
           <Icon icon="ion:arrow-forward" width="22" className="mx-auto" />
         </Button>
       </div>
