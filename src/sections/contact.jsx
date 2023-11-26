@@ -44,7 +44,7 @@ const Contact = ({ socials }) => {
   }
 
   return (
-    <footer id='contact' className='h-full px-8 md:px-24 py-16 lg:py-32 space-y-6 lg:space-y-12' >
+    <div id='contact' className='h-full px-8 md:px-24 py-16 lg:py-32 space-y-6 lg:space-y-12' >
         
         <motion.h1
         initial="from"
@@ -108,7 +108,7 @@ const Contact = ({ socials }) => {
 
         </div>
 
-    </footer>
+    </div>
   )
 }
 

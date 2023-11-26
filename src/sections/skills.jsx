@@ -36,25 +36,26 @@ const Skills = ({ skills }) => {
                 <>
                   <div className="space-y-8 lg:space-y-10 pb-4" key={index}>
                     
-                    <motion.div 
+                    <motion.h2 
                       initial={{ y: 100, opacity: 0 }}
                       whileInView={{ y: 0, opacity: 1 }}
                       transition={{duration: 0.8}}
                       viewport={{ once: true }}
                       className="font-primary text-4xl sm:text-5xl md:text-7xl lg:text-9xl leading-none break-words">
                         {skill.skillName}
-                    </motion.div>
+                    </motion.h2>
                     
                     <div className="flex gap-2 flex-wrap">
                       {
                         skill.stack.map((stack, index) => {
                           return (
                             <motion.div 
-                            initial={{ y: 50, opacity: 0 }}
-                            whileInView={{ y: 0, opacity: 1 }}
-                            transition={{duration: 0.8, delay: index * 0.05,}}
-                            viewport={{ once: true }}>
-                              <Chip shape="rounded" variant={stack.level} key={index}>{stack.stackName}</Chip>
+                              key={index}
+                              initial={{ y: 50, opacity: 0 }}
+                              whileInView={{ y: 0, opacity: 1 }}
+                              transition={{duration: 0.8, delay: index * 0.05,}}
+                              viewport={{ once: true }}>
+                              <Chip shape="rounded" variant={stack.level}>{stack.stackName}</Chip>
                             </motion.div>
                           )
                         })
@@ -64,6 +65,7 @@ const Skills = ({ skills }) => {
                   </div>
                   
                   <motion.div 
+                    role="separator"
                     initial={{ opacity: 0, width: "0%" }}
                     whileInView={{ opacity: 1, width: "100%" }}
                     transition={{ duration: 1, ease: "easeIn"}}
