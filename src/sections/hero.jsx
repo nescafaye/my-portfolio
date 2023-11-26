@@ -52,7 +52,7 @@ const Hero = ({intro}) => {
               ease: "easeIn",
             }}>
               <span>Web</span>
-              <img src={isDarkMode ? (pinkArrow) : (darkArrow)} className="w-14 h-14 sm:w-16 sm:h-16 md:w-24 md:h-24 xl:w-48 xl:h-48 rotate-45" alt=""/>
+              <img src={isDarkMode ? (pinkArrow) : (darkArrow)} className="w-14 h-14 sm:w-16 sm:h-16 md:w-24 md:h-24 xl:w-48 xl:h-48 rotate-45" alt="45 degree 2d arrow icon"/>
             </motion.div>
           </div>
           <div className="overflow-hidden">
@@ -75,7 +75,7 @@ const Hero = ({intro}) => {
               delay: 0.40
             }}>
               <span>Designer</span>
-              <img src={isDarkMode ? (pinkSparkle) : (darkSparkle)}className="w-14 h-14 sm:w-16 sm:h-16 md:w-24 md:h-24 xl:w-48 xl:h-48" alt=""/>
+              <img src={isDarkMode ? (pinkSparkle) : (darkSparkle)}className="w-14 h-14 sm:w-16 sm:h-16 md:w-24 md:h-24 xl:w-48 xl:h-48" alt="2d 4 pointed star icon"/>
             </motion.div>
           </div>
           {/* <div className="overflow-hidden">

@@ -68,7 +68,7 @@ const PassionProj = ({ projects }) => {
                 projects.map((proj, index) => {
                   return (
                     <div className='h-[30rem] min-w-[26rem] overflow-clip' key={index}>
-                      <a href="#" target="_blank" rel="noopener noreferrer">
+                      <a href="#" target="_blank" rel="noreferrer">
                         <img src={proj.projectImage} alt={proj.projectAlt}
                         className='h-full w-full object-cover hover:scale-110 transition-transform duration-500'/>
                       </a>

@@ -150,7 +150,7 @@ export const data = {
             ],
             projectImage: "https://cdn.jsdelivr.net/gh/nescafaye/my-portfolio@main/src/assets/images/Unsplash-Mockup.webp",
             projectLink: "https://unsplash-api-five.vercel.app",
-            projectAlt: "Mockup of Unsplash image search engine replica with prominent floating search bar and card components."
+            projectAlt: "Mockup of Unsplash image search replica with prominent floating search bar and card components."
         },
         {
             projectName: "Recipes CRUD",
@@ -160,7 +160,7 @@ export const data = {
             ],
             projectImage: "https://cdn.jsdelivr.net/gh/nescafaye/my-portfolio@main/src/assets/images/Recipes-Mockup.webp",
             projectLink: "https://github.com/nescafaye/crud-front-end",
-            projectAlt: "Mockup of a Filipino dessert/delicacies recipe CRUD app in dark mode built with MERN stack."
+            projectAlt: "Mockup of a Filipino dessert/delicacies recipe CRUD app in dark mode."
         },
     ],
     passionProjects: [

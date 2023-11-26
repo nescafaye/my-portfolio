@@ -80,7 +80,7 @@ const Contact = ({ socials }) => {
                     return (
                       <>
                         <motion.li key={index} variants={item}>
-                          <Link href={social.socialUrl} target={'_blank'} rel={'noopener noreferrer'}>{social.socialName}</Link>
+                          <Link href={social.socialUrl}>{social.socialName}</Link>
                         </motion.li>
                       </>
                     )

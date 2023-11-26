@@ -16,10 +16,9 @@ export default {
         dark: "#131315",
         "dark-2": "#333333",
         "neon-pink": "#F800C1",
-        "neon-blue": "#0075FF",
+        "neon-blue": "#3d87ff",
         "neon-green": "#A6FF00",
         "neon-yellow": "#F6FF01",
-
       },
     },
   },

@@ -40,7 +40,7 @@ const Navbar = () => {
                 </Button>
 
                 <Button toggle={toggleDarkMode}>
-                  <Icon icon={isDarkMode ? "iconamoon:mode-light" : "iconamoon:mode-dark"} width="20" />
+                  <Icon icon={isDarkMode ? "iconamoon:mode-light" : "iconamoon:mode-dark"} width="20" aria-label="button to toggle theme"/>
                 </Button>
 
             </div>

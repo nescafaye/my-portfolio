@@ -46,7 +46,7 @@ const Works = ({ projects }) => {
                 <div className="w-full lg:w-1/2 flex-1 flex justify-center items-center border-[0.1px] border-dark dark:border-neon-pink relative">
                   <a href={project.projectLink} 
                   target="_blank" 
-                  rel="noopener noreferrer" 
+                  rel="noreferrer" 
                   className="w-full h-full overflow-clip relative"
                   onMouseEnter={handleMouseEnter} 
                   onMouseLeave={handleMouseLeave}>
