@@ -25,7 +25,9 @@ const Button = ({ style, shape, type, toggle, link, children, ...props }) => {
 
   return (
 
-    <a href={link ? link : undefined} target={link ? '_blank' : undefined}
+    <a href={link ? link : undefined} 
+      target={link ? '_blank' : undefined}
+      rel="noreferrer"
       onMouseEnter={handleMouseEnter} 
       onMouseLeave={handleMouseLeave}>
       <button type="button" onClick={toggle} className={classNames} {...props}>
