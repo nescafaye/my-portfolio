@@ -1,8 +1,8 @@
 export const data = {
     name: "Faye Talay",
-    intro: "Hi! I'm Faye. I'm into the art of Web Development, UI/UX, and Graphic Design. Exploring the world of digital design with a growing passion for blending aesthetics and functionality.",
+    intro: "Hi! I'm Faye. I'm into Web Development, UI/UX, and Graphic Design. Exploring the world of digital design with a growing passion for blending aesthetics and functionality.",
     summary: "Hello! My name is Faye Talay, a developer and designer based in the Philippines.",
-    desc: "With a degree in Information Technology, my expertise encompasses not only web development but also the spectrum of creative design. I'm dedicated to crafting visually appealing web experiences that seamlessly blend aesthetics with functionality. My favorite design trends of 2023 are retro sticker bombs. utilitarian, and neu-brutalism. Embracing new ideas and a continuous willingness to learn are at the core of my approach. I appreciate the ever-evolving nature of the industry and always strive to stay ahead of the curve.",
+    desc: "With a degree in Information Technology, I enjoy building user-friendly websites that look good and works well. My interests range from web development to creative design. This 2023, I particularly like incorporating trendy design styles like retro sticker bombs, utilitarian, and neu-brutalism. I'm always eager to embrace new ideas and continuously learn.",
     link: "talayfaye@gmail.com",
     socials: [
         {
@@ -106,6 +106,10 @@ export const data = {
                     level:"beginner"
                 },
                 {
+                    stackName: "PHP",
+                    level:"intermediate"
+                }, 
+                {
                     stackName: "C#",
                     level:"intermediate"
                 },   
@@ -153,7 +157,7 @@ export const data = {
             projectAlt: "Mockup of Unsplash image search replica with prominent floating search bar and card components."
         },
         {
-            projectName: "Recipes CRUD",
+            projectName: "Recipes",
             projectDesc: "The Recipe App is a CRUD application developed using MERN stack that showcases a delightful collection of Filipino delicacies and dessert recipes.",
             projectTags: [
                 "React", "MongoDB", "Express.js", "Node.js", "Tailwind" 
