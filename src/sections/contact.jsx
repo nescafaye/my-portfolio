@@ -103,7 +103,7 @@ const Contact = ({ socials }) => {
             &copy; 2023
           </div>
           <div className='font-secondary text-sm'>
-            design and code by faye
+            design and code by faye | TBU
           </div>
 
         </div>

@@ -39,6 +39,10 @@ export const data = {
                     level:"beginner"
                 },
                 {
+                    stackName: "Java",
+                    level:"beginner"
+                },
+                {
                     stackName: "Javascript",
                     level:"intermediate"
                 },
@@ -46,6 +50,14 @@ export const data = {
                     stackName: "Laravel",
                     level:"intermediate"
                 },
+                {
+                    stackName: "PHP",
+                    level:"intermediate"
+                }, 
+                {
+                    stackName: "C#",
+                    level:"intermediate"
+                }, 
                 {
                     stackName: "Tailwind",
                     level:"intermediate"
@@ -98,23 +110,6 @@ export const data = {
                 }
             ]
         },
-        {
-            skillName: "Software Development",
-            stack: [
-                {
-                    stackName: "Java",
-                    level:"beginner"
-                },
-                {
-                    stackName: "PHP",
-                    level:"intermediate"
-                }, 
-                {
-                    stackName: "C#",
-                    level:"intermediate"
-                },   
-            ]
-        }, 
         {
             skillName: "Content Management System",
             stack: [
